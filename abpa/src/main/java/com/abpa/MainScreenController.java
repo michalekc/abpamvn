@@ -17,11 +17,14 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 import javax.swing.*;
+
+import com.univocity.parsers.csv.CsvParser;
+import com.univocity.parsers.csv.CsvParserSettings;
+
 import java.io.*;
-import java.net.URISyntaxException;
-import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.List;
 
 public class MainScreenController {
 
@@ -371,52 +374,27 @@ public class MainScreenController {
 
     @FXML
     private void importRoster() throws FileNotFoundException {
-        boolean validRosterFile = false;
-
         mainData = new Database();
 
-        //roster = new File(System.getProperty("user.dir") + "\\Rosters\\2018.csv");
-        roster = new File(System.getProperty("user.dir") + "\\src\\main\\java\\com\\abpa\\Rosters\\2018.csv");
-        //roster = new File(System.getProperty("user.dir") + "\\2018.csv");
+        CsvParserSettings settings = new CsvParserSettings();
+        settings.setHeaderExtractionEnabled(true);
+        settings.setNullValue("");
 
-        /*ClassLoader cl = Thread.currentThread().getContextClassLoader();
+        CsvParser parser = new CsvParser(settings);
 
-        URL resource = cl.getResource("2018.csv");
-        if(resource == null) {
-            throw new IllegalArgumentException("File Not Found");
-        } else {
-            try {
-                roster = new File(resource.toURI());
-            } catch (URISyntaxException e) {
-                e.printStackTrace();
+        try (InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("2018.csv")) {
+            if(inputStream == null) {
+                throw new IllegalArgumentException("File Not Found in Resources Folder");
             }
-        }*/
 
-        //InputStream inputStream = cl.getResourceAsStream("2018.csv");
-        
+            List<String[]> allRows = parser.parseAll(inputStream, StandardCharsets.UTF_8);
+
+            mainData.fill(allRows);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }        
 
         try {
-            while(!validRosterFile) {
-                Scanner scan = new Scanner(roster);
-                String header = scan.nextLine();
-                if(header.equalsIgnoreCase("Name,Position,Team,Pitch Hand,Pitch Grade,Bats," +
-                        "Fielding Points,Pitching Rating,Speed,11,12,13,14,15,16,21,22,23,24,25,26,31,32,33,34,35,36," +
-                        "41,42,43,44,45,46,51,52,53,54,55,56,61,62,63,64,65,66,11_2,12_2,13_2,14_2,15_2,16_2,21_2," +
-                        "22_2,23_2,24_2,25_2,26_2,31_2,32_2,33_2,34_2,35_2,36_2,41_2,42_2,43_2,44_2,45_2,46_2,51_2," +
-                        "52_2,53_2,54_2,55_2,56_2,61_2,62_2,63_2,64_2,65_2,66_2") ||
-                        header.equalsIgnoreCase("Name,Position,Team,Pitch Hand,Pitch Grade,Bats," +
-                        "Fielding Points,Pitching Rating,Speed,11,12,13,14,15,16,21,22,23,24,25,26,31,32,33,34,35,36," +
-                        "41,42,43,44,45,46,51,52,53,54,55,56,61,62,63,64,65,66,11_2,12_2,13_2,14_2,15_2,16_2,21_2," +
-                        "22_2,23_2,24_2,25_2,26_2,31_2,32_2,33_2,34_2,35_2,36_2,41_2,42_2,43_2,44_2,45_2,46_2,51_2," +
-                        "52_2,53_2,54_2,55_2,56_2,61_2,62_2,63_2,64_2,65_2,66_2,")) {
-                    validRosterFile = true;
-                } else {
-                    JOptionPane.showMessageDialog(null, "Please choose a valid Database File.",
-                            "Error", JOptionPane.ERROR_MESSAGE);
-                }
-                mainData.fill(roster);
-            }
-
             setButtonGraphics();
             initAmericanButtons();
             initNationalButtons();

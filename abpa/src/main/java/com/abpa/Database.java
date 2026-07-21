@@ -3,17 +3,12 @@ package com.abpa;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-import java.io.*;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.function.Function;
-import java.util.regex.Pattern;
+import java.util.List;
 import java.util.stream.Collectors;
 
 class Database {
-
-    private Collection<Player> players;
-
 
     private Collection<Player> milwaukee = new ArrayList<>();
     private Collection<Player> chicagoC = new ArrayList<>();
@@ -46,30 +41,19 @@ class Database {
     private Collection<Player> texas = new ArrayList<>();
     private Collection<Player> houston = new ArrayList<>();
 
+    void fill(List<String[]> allRows) {
+        
+        for(String[] row: allRows) {
+            Player r = new Player(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8],
+                row[9], row[10], row[11], row[12], row[13], row[14], row[15], row[16], row[17],
+                row[18], row[19], row[20], row[21], row[22], row[23], row[24], row[25], row[26],
+                row[27], row[28], row[29], row[30], row[31], row[32], row[33], row[34], row[35],
+                row[36], row[37], row[38], row[39], row[40], row[41], row[42], row[43], row[44],
+                row[45], row[46], row[47], row[48], row[49], row[50], row[51], row[52], row[53],
+                row[54], row[55], row[56], row[57], row[58], row[59], row[60], row[61], row[62],
+                row[63], row[64], row[65], row[66], row[67], row[68], row[69], row[70], row[71],
+                row[72], row[73], row[74], row[75], row[76], row[77], row[78], row[79], row[80]);
 
-    //Initialization of string array to store the results of a string separation
-    private String[] parsed;
-    //Expression to be used for separation
-    private final String regex = ",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)";
-    //Pattern result from compilation
-    private Pattern compiledPattern = Pattern.compile(regex);
-
-    void fill(File roster) {
-        try {
-            InputStream inputStream = new FileInputStream(roster);
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-
-            this.players = bufferedReader.lines().parallel().map(toPlayer).collect(Collectors.toCollection(ArrayList::new));
-
-            bufferedReader.close();
-
-        } catch (FileNotFoundException ex) {
-            //do nothing
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        for(Player r : players) {
             if(r.getTeam().equalsIgnoreCase("Milwaukee Brewers")) {
                 milwaukee.add(r);
             }
@@ -163,24 +147,6 @@ class Database {
         }
 
     }
-
-    private Function<String, Player> toPlayer = (line) -> {
-
-        if(line.endsWith(",")) {
-            line += '\0';
-        }
-        this.parsed = compiledPattern.split(line);
-
-        return new Player(parsed[0], parsed[1], parsed[2], parsed[3], parsed[4], parsed[5], parsed[6], parsed[7], parsed[8],
-                parsed[9], parsed[10], parsed[11], parsed[12], parsed[13], parsed[14], parsed[15], parsed[16], parsed[17],
-                parsed[18], parsed[19], parsed[20], parsed[21], parsed[22], parsed[23], parsed[24], parsed[25], parsed[26],
-                parsed[27], parsed[28], parsed[29], parsed[30], parsed[31], parsed[32], parsed[33], parsed[34], parsed[35],
-                parsed[36], parsed[37], parsed[38], parsed[39], parsed[40], parsed[41], parsed[42], parsed[43], parsed[44],
-                parsed[45], parsed[46], parsed[47], parsed[48], parsed[49], parsed[50], parsed[51], parsed[52], parsed[53],
-                parsed[54], parsed[55], parsed[56], parsed[57], parsed[58], parsed[59], parsed[60], parsed[61], parsed[62],
-                parsed[63], parsed[64], parsed[65], parsed[66], parsed[67], parsed[68], parsed[69], parsed[70], parsed[71],
-                parsed[72], parsed[73], parsed[74], parsed[75], parsed[76], parsed[77], parsed[78], parsed[79], parsed[80]);
-    };
 
     ObservableList<Player> getMilwaukee() {
         return milwaukee.stream().collect(Collectors.toCollection(FXCollections::observableArrayList));
