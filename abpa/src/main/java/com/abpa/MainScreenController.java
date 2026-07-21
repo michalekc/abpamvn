@@ -3,6 +3,7 @@ package com.abpa;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.beans.property.ReadOnlyStringWrapper;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -101,6 +102,8 @@ public class MainScreenController {
 
     private ArrayList<Player> homeBattingOrder = new ArrayList<>(9);
     private ArrayList<Player> awayBattingOrder = new ArrayList<>(9);
+
+    private static String DEFAULT_ROSTER_TEXT = "Choose Roster Year";
 
     private final int MARINERS = 1;
     private final int ASTROS = 2;
@@ -259,6 +262,8 @@ public class MainScreenController {
     @FXML
     private ChoiceBox centerField;
 
+    @FXML
+    private MenuButton rosterYear;
 
     @FXML
     private ImageView americanLeagueLogo;
@@ -370,8 +375,6 @@ public class MainScreenController {
     private Image homeImage;
     private Image awayImage;
 
-
-
     @FXML
     private void importRoster() throws FileNotFoundException {
         mainData = new Database();
@@ -382,7 +385,15 @@ public class MainScreenController {
 
         CsvParser parser = new CsvParser(settings);
 
-        try (InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("2018.csv")) {
+        String filename = rosterYear.getText();
+
+        if(!filename.equalsIgnoreCase(DEFAULT_ROSTER_TEXT)) {
+            filename += ".csv";
+        } else {
+            filename = "2018.csv";
+        }
+
+        try (InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(filename)) {
             if(inputStream == null) {
                 throw new IllegalArgumentException("File Not Found in Resources Folder");
             }
@@ -392,7 +403,7 @@ public class MainScreenController {
             mainData.fill(allRows);
         } catch (Exception e) {
             e.printStackTrace();
-        }        
+        } 
 
         try {
             setButtonGraphics();
@@ -405,6 +416,12 @@ public class MainScreenController {
         } catch (NullPointerException ex) {
             //do nothing. this shouldn't happen
         }
+    }
+
+    @FXML
+    private void changeMenuButton(ActionEvent event) {
+        MenuItem clickedItem = (MenuItem) event.getSource();
+        rosterYear.setText(clickedItem.getText());
     }
 
     @FXML
@@ -1702,6 +1719,8 @@ public class MainScreenController {
         start.setVisible(false);
         exit.setVisible(false);
 
+        rosterYear.setVisible(false);
+
         backToMain.setVisible(true);
         backToTeamSelect.setVisible(false);
         setLineup1.setVisible(false);
@@ -1744,6 +1763,9 @@ public class MainScreenController {
 
         start.setVisible(true);
         exit.setVisible(true);
+
+        rosterYear.setText(DEFAULT_ROSTER_TEXT);
+        rosterYear.setVisible(true);
 
         eastA.setVisible(false);
         eastN.setVisible(false);

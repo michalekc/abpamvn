@@ -1,6 +1,5 @@
 com\abpa\Main.class
+com\abpa\MainScreenController.class
 com\abpa\Player.class
-com\abpa\Database.class
 com\abpa\Launcher.class
 com\abpa\Game.class
-com\abpa\MainScreenController.class
