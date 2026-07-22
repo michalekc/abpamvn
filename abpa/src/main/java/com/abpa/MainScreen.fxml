@@ -236,7 +236,7 @@
       <MenuButton fx:id="rosterYear" layoutX="29.0" layoutY="728.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="162.0" text="Choose Roster Year">
          <items>
             <MenuItem fx:id="roster2018" mnemonicParsing="false" onAction="#changeMenuButton" text="2018" />
-            <MenuItem fx:id="roster2026" mnemonicParsing="false" onAction="#changeMenuButton" text="2026" />
+            <MenuItem fx:id="roster2025" mnemonicParsing="false" onAction="#changeMenuButton" text="2025" />
          </items>
       </MenuButton>
    </children>

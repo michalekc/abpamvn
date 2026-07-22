@@ -16,7 +16,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("MainScreen.fxml"));
         primaryStage.setTitle("APBA Baseball");
-        primaryStage.setScene(new Scene(root, 890, 790));
+        primaryStage.setScene(new Scene(root, 900, 800));
         primaryStage.getIcons().add(apbaLogo);
         primaryStage.setResizable(false);
         primaryStage.show();

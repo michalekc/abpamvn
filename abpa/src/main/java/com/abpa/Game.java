@@ -57,12 +57,14 @@ public class Game {
     private Label strikes = new Label("Strikes: ");
     private Label balls = new Label("Balls: ");
     private Label inningLabel = new Label("Inning: ");
+    private Label nowPitching = new Label("Now Pitching: ");
     private Label upToBat = new Label("At Bat: ");
     private Label numberOnCard = new Label("Batter Outcome: ");
     private Label outsNum = new Label("0");
     private Label strikesNum = new Label("0");
     private Label ballsNum = new Label("0");
     private Label atBatPlayer = new Label("");
+    private Label currentPitcher = new Label("");
     private Label numOnCard = new Label("");
     private Label inningNum = new Label("Top 1");
 
@@ -104,7 +106,8 @@ public class Game {
     public void startGame(ArrayList<Player> home, ArrayList<Player> away, ImageView thirdBaseDot,
                           ImageView secondBaseDot, ImageView firstBaseDot, String awayPitcherGrade,
                           String homePitcherGrade, String awayPitcherRating, String homePitcherRating,
-                          int awayFieldingGrade, int homeFieldingGrade, Image awayImage, Image homeImage) {
+                          int awayFieldingGrade, int homeFieldingGrade, Image awayImage, Image homeImage, 
+                          String homePitcherName, String awayPitcherName) {
         this.home = home;
         this.away = away;
         this.firstBaseDot = firstBaseDot;
@@ -125,8 +128,8 @@ public class Game {
 
         gameStage = new Stage();
         Pane comp = new Pane();
-        gameStage.setWidth(516);
-        gameStage.setHeight(400);
+        gameStage.setWidth(520);
+        gameStage.setHeight(420);
 
         roll = new Button("Roll");
         roll.setLayoutY(205);
@@ -142,8 +145,10 @@ public class Game {
             numOnCard.setText("");
             if(teamAtBat == 0) {
                 atBatPlayer.setText(away.get(playerAtBatAway).getName());
+                currentPitcher.setText(homePitcherName);
             } else {
                 atBatPlayer.setText(home.get(playerAtBatHome).getName());
+                currentPitcher.setText(awayPitcherName);
             }
         });
 
@@ -165,13 +170,13 @@ public class Game {
         awayLogo.setFitHeight(90);
         homeLogo.setFitWidth(90);
         homeLogo.setFitHeight(90);
-        awayLogo.setLayoutX(300);
-        homeLogo.setLayoutX(300);
+        awayLogo.setLayoutX(320);
+        homeLogo.setLayoutX(320);
         awayLogo.setLayoutY(15);
         homeLogo.setLayoutY(115);
 
-        homeScoreLabel.setLayoutX(410);
-        awayScoreLabel.setLayoutX(410);
+        homeScoreLabel.setLayoutX(430);
+        awayScoreLabel.setLayoutX(430);
         homeScoreLabel.setLayoutY(115);
         awayScoreLabel.setLayoutY(15);
 
@@ -182,6 +187,8 @@ public class Game {
 
         comp.getChildren().add(inningLabel);
         comp.getChildren().add(inningNum);
+        comp.getChildren().add(nowPitching);
+        comp.getChildren().add(currentPitcher);
         comp.getChildren().add(upToBat);
         comp.getChildren().add(atBatPlayer);
         comp.getChildren().add(outs);
@@ -286,38 +293,46 @@ public class Game {
         inningLabel.setLayoutX(15);
         inningNum.setLayoutX(90);
 
+        nowPitching.setPrefWidth(200);
+        nowPitching.setLayoutX(15);
+        nowPitching.setLayoutY(25);
+        currentPitcher.setLayoutX(165);
+        currentPitcher.setLayoutY(29);
+
         upToBat.setPrefWidth(100);
         upToBat.setLayoutX(15);
-        upToBat.setLayoutY(25);
-        atBatPlayer.setLayoutY(29);
+        upToBat.setLayoutY(50);
+        atBatPlayer.setLayoutY(54);
         atBatPlayer.setLayoutX(90);
 
         numberOnCard.setPrefWidth(200);
         numberOnCard.setLayoutX(15);
-        numberOnCard.setLayoutY(50);
-        numOnCard.setLayoutY(50);
+        numberOnCard.setLayoutY(75);
+        numOnCard.setLayoutY(75);
         numOnCard.setLayoutX(193);
 
         strikes.setPrefWidth(100);
         strikes.setLayoutX(15);
-        strikes.setLayoutY(120);
-        strikesNum.setLayoutY(120);
+        strikes.setLayoutY(140);
+        strikesNum.setLayoutY(140);
         strikesNum.setLayoutX(97);
 
         balls.setPrefWidth(100);
         balls.setLayoutX(36);
-        balls.setLayoutY(95);
-        ballsNum.setLayoutY(95);
+        balls.setLayoutY(115);
+        ballsNum.setLayoutY(115);
         ballsNum.setLayoutX(97);
 
         outs.setPrefWidth(100);
         outs.setLayoutX(37);
-        outs.setLayoutY(145);
-        outsNum.setLayoutY(145);
+        outs.setLayoutY(165);
+        outsNum.setLayoutY(165);
         outsNum.setLayoutX(97);
 
         inningLabel.setStyle("-fx-font: 24 arial;");
         inningNum.setStyle("-fx-font: 24 arial;");
+        nowPitching.setStyle("-fx-font: 24 arial;");
+        currentPitcher.setStyle("-fx-font: 18 arial;");
         upToBat.setStyle("-fx-font: 24 arial;");
         atBatPlayer.setStyle("-fx-font: 18 arial;");
         numberOnCard.setStyle("-fx-font: 24 arial;");

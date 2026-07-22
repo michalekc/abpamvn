@@ -148,6 +148,8 @@ public class MainScreenController {
     private String pitchingGradeAway;
     private String pitchingRatingAway;
     private String pitchingRatingHome;
+    private String awayPitcherName;
+    private String homePitcherName;
 
     private Stage rosterWindow;
     private Stage playerCard = new Stage();
@@ -1546,8 +1548,8 @@ public class MainScreenController {
         Pane comp = new Pane();
         rosterInfo = new TableView();
         rosterWindow.setTitle(teams[TEAM_SELECTED] + " Roster");
-        rosterInfo.setMinWidth(755);
-        rosterInfo.setMinHeight(390);
+        rosterInfo.setMinWidth(765);
+        rosterInfo.setMinHeight(400);
 
         rosterInfo.getColumns().add(name_col);
         rosterInfo.getColumns().add(position_col);
@@ -1579,7 +1581,7 @@ public class MainScreenController {
             return row ;
         });
 
-        Scene stageScene = new Scene(comp, 755, 390);
+        Scene stageScene = new Scene(comp, 765, 400);
         rosterWindow.setScene(stageScene);
         rosterWindow.show();
     }
@@ -2411,6 +2413,7 @@ public class MainScreenController {
             if(r.getPosition().equalsIgnoreCase("P") && !(r.getPitching_grade().contains("*"))) {
                 homeStartingLineup.add(r);
                 homeFieldingPoints += Integer.parseInt(r.getFielding_points());
+                homePitcherName = r.getName();
                 pitchingGradeHome = r.getPitching_grade();
                 pitchingRatingHome = r.getPitching_rating();
             }
@@ -2479,6 +2482,7 @@ public class MainScreenController {
         if(r.getName().equalsIgnoreCase(pitcherName[0])) {
             if(r.getPosition().equalsIgnoreCase("P") && !(r.getPitching_grade().contains("*"))) {
                 awayStartingLineup.add(r);
+                awayPitcherName = r.getName();
                 pitchingGradeAway = r.getPitching_grade();
                 pitchingRatingAway = r.getPitching_rating();
                 awayFieldingPoints += Integer.parseInt(r.getFielding_points());
@@ -2871,7 +2875,7 @@ public class MainScreenController {
             newGame = new Game();
             newGame.startGame(homeBattingOrder, awayBattingOrder, thirdBaseDot, secondBaseDot, firstBaseDot,
                     pitchingGradeAway, pitchingGradeHome, pitchingRatingAway, pitchingRatingHome,
-                    awayFieldingGrade, homeFieldingGrade, awayImage, homeImage);
+                    awayFieldingGrade, homeFieldingGrade, awayImage, homeImage, homePitcherName, awayPitcherName);
         });
     }
 
