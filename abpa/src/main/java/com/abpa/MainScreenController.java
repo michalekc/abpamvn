@@ -395,7 +395,9 @@ public class MainScreenController {
 
         try (InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(filename)) {
             if(inputStream == null) {
-                throw new IllegalArgumentException("File Not Found in Resources Folder");
+                JOptionPane.showMessageDialog(null, "No Roster File Found",
+                    "Error", JOptionPane.ERROR_MESSAGE);
+                return;
             }
 
             List<String[]> allRows = parser.parseAll(inputStream, StandardCharsets.UTF_8);
