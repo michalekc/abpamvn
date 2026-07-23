@@ -13,6 +13,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -113,17 +114,31 @@ public class Game {
     private ImageView thirdBaseDot;
     private ImageView secondBaseDot;
     private ImageView firstBaseDot;
+    private Label firstBaseRunnerLabel;
+    private Label secondBaseRunnerLabel;
+    private Label thirdBaseRunnerLabel;
+    private StackPane firstBaseStackPane;
+    private StackPane secondBaseStackPane;
+    private StackPane thirdBaseStackPane;
 
     public Stage startGame(ArrayList<Player> home, ArrayList<Player> away, ImageView thirdBaseDot,
                           ImageView secondBaseDot, ImageView firstBaseDot, String awayPitcherGrade,
                           String homePitcherGrade, String awayPitcherRating, String homePitcherRating,
                           int awayFieldingGrade, int homeFieldingGrade, Image awayImage, Image homeImage, 
-                          String homePitcherName, String awayPitcherName) {
+                          String homePitcherName, String awayPitcherName, Label firstBaseRunnerLabel, 
+                          Label secondBaseRunnerLabel, Label thirdBaseRunnerLabel, StackPane firstBaseStackPane, 
+                          StackPane secondBaseStackPane, StackPane thirdBaseStackPane) {
         this.home = home;
         this.away = away;
         this.firstBaseDot = firstBaseDot;
         this.secondBaseDot = secondBaseDot;
         this.thirdBaseDot = thirdBaseDot;
+        this.firstBaseRunnerLabel = firstBaseRunnerLabel;
+        this.secondBaseRunnerLabel = secondBaseRunnerLabel;
+        this.thirdBaseRunnerLabel = thirdBaseRunnerLabel;
+        this.firstBaseStackPane = firstBaseStackPane;
+        this.secondBaseStackPane = secondBaseStackPane;
+        this.thirdBaseStackPane = thirdBaseStackPane;
         this.homePitcherGrade = homePitcherGrade;
         this.awayPitcherGrade = awayPitcherGrade;
         this.awayPitcherRating = awayPitcherRating;
@@ -135,6 +150,10 @@ public class Game {
         homeLog = home.get(0).getTeam().toUpperCase() + " OUTCOMES: ";
 
         addInningToAwayLog();
+
+        firstBaseStackPane.setVisible(true);
+        secondBaseStackPane.setVisible(true);
+        thirdBaseStackPane.setVisible(true);
 
         firstBaseDot.setVisible(false);
         secondBaseDot.setVisible(false);
@@ -2052,6 +2071,42 @@ public class Game {
         return  firstBaseDot.isVisible() && secondBaseDot.isVisible() && thirdBaseDot.isVisible();
     }
 
+    private void runnerToFirst() {
+        firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+        firstBaseRunnerLabel.setVisible(true);
+        firstBaseDot.setVisible(true);
+    }
+
+    private void runnerToSecond() {
+        secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+        secondBaseRunnerLabel.setVisible(true);
+        secondBaseDot.setVisible(true);
+    }
+
+    private void runnerToThird() {
+        thirdBaseRunnerLabel.setText(thirdBaseRunner + " (" + thirdBaseRunnerSpeed + ")");
+        thirdBaseRunnerLabel.setVisible(true);
+        thirdBaseDot.setVisible(true);
+    }
+
+    private void runnerOffFirst() {
+        firstBaseRunnerLabel.setVisible(false);
+        firstBaseRunnerLabel.setText("");
+        firstBaseDot.setVisible(false);
+    }
+
+    private void runnerOffSecond() {
+        secondBaseRunnerLabel.setVisible(false);
+        secondBaseRunnerLabel.setText("");
+        secondBaseDot.setVisible(false);
+    }
+
+    private void runnerOffThird() {
+        thirdBaseRunnerLabel.setVisible(false);
+        thirdBaseRunnerLabel.setText("");
+        thirdBaseDot.setVisible(false);
+    }
+
     private void gradeABasesEmpty(int playerNumber) {
         switch (playerNumber) {
             case 1:
@@ -2071,79 +2126,85 @@ public class Game {
                 outcomeDescription = "TRIPLE to left center";
                 situationOutcome.setText(outcomeDescription);
                 if(teamAtBat == 0) {
-                    thirdBaseDot.setVisible(true);
                     thirdBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    thirdBaseRunner = away.get(playerAtBatAway).getName();
                     awayNextBatter();
                 } else {
-                    thirdBaseDot.setVisible(true);
                     thirdBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    thirdBaseRunner = home.get(playerAtBatHome).getName();
                     homeNextBatter();
                 }
+                runnerOnThird();
                 break;
             case 3:
                 outcomeDescription = "TRIPLE to right";
                 situationOutcome.setText(outcomeDescription);
                 if(teamAtBat == 0) {
-                    thirdBaseDot.setVisible(true);
                     thirdBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    thirdBaseRunner = away.get(playerAtBatAway).getName();
                     awayNextBatter();
                 } else {
-                    thirdBaseDot.setVisible(true);
                     thirdBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    thirdBaseRunner = home.get(playerAtBatHome).getName();
                     homeNextBatter();
                 }
+                runnerOnThird();
                 break;
             case 4:
                 outcomeDescription = "DOUBLE over 3rd";
                 situationOutcome.setText(outcomeDescription);
                 if(teamAtBat == 0) {
-                    secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    secondBaseRunner = away.get(playerAtBatAway).getName();
                     awayNextBatter();
                 } else {
-                    secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    secondBaseRunner = home.get(playerAtBatHome).getName();
                     homeNextBatter();
                 }
+                runnerOnSecond();
                 break;
             case 5:
                 outcomeDescription = "DOUBLE over 1st";
                 situationOutcome.setText(outcomeDescription);
                 if(teamAtBat == 0) {
-                    secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    secondBaseRunner = away.get(playerAtBatAway).getName();
                     awayNextBatter();
                 } else {
-                    secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    secondBaseRunner = home.get(playerAtBatHome).getName();
                     homeNextBatter();
                 }
+                runnerOnSecond();
                 break;
             case 6:
                 outcomeDescription = "DOUBLE to right center";
                 situationOutcome.setText(outcomeDescription);
                 if(teamAtBat == 0) {
-                    secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    secondBaseRunner = away.get(playerAtBatAway).getName();
                     awayNextBatter();
                 } else {
-                    secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    secondBaseRunner = home.get(playerAtBatHome).getName();
                     homeNextBatter();
                 }
+                runnerOnSecond();
                 break;
             case 7:
                 outcomeDescription = "SINGLE to right";
                 situationOutcome.setText(outcomeDescription);
                 if(teamAtBat == 0) {
-                    firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    firstBaseRunner = away.get(playerAtBatAway).getName();
                     awayNextBatter();
                 } else {
-                    firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    firstBaseRunner = home.get(playerAtBatHome).getName();
                     homeNextBatter();
                 }
+                runnerOnFirst();
                 break;
             case 8:
                 outcomeDescription = "Pop fly out PO-3B";
@@ -2191,32 +2252,34 @@ public class Game {
                 outcomeDescription = "SINGLE to center";
                 situationOutcome.setText(outcomeDescription);
                 if(teamAtBat == 0) {
-                    firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    firstBaseRunner = away.get(playerAtBatAway).getName();
                     awayNextBatter();
                 } else {
-                    firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    firstBaseRunner = home.get(playerAtBatHome).getName();
                     homeNextBatter();
                 }
+                runnerOnFirst();
                 break;
             case 11:
                 outcomeDescription = "SINGLE to left; batter steals 2nd on first pitch to next batter; one strike" +
                         " on batter";
                 situationOutcome.setText(outcomeDescription);
                 if(teamAtBat == 0) {
-                    secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    secondBaseRunner = away.get(playerAtBatAway).getName();
                     awayNextBatter();
                     strike++;
                     strikesNum.setText(Integer.toString(strike));
                 } else {
-                    secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    secondBaseRunner = home.get(playerAtBatHome).getName();
                     homeNextBatter();
                     strike++;
                     strikesNum.setText(Integer.toString(strike));
                 }
+                runnerOnSecond();
                 break;
         }
     }
@@ -2242,10 +2305,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     thirdBaseDot.setVisible(true);
                     thirdBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    thirdBaseRunner = away.get(playerAtBatAway).getName();
+                    thirdBaseRunnerLabel.setText(thirdBaseRunner + " (" + thirdBaseRunnerSpeed + ")");
+                    thirdBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     thirdBaseDot.setVisible(true);
                     thirdBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    thirdBaseRunner = home.get(playerAtBatHome).getName();
+                    thirdBaseRunnerLabel.setText(thirdBaseRunner + " (" + thirdBaseRunnerSpeed + ")");
+                    thirdBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2255,10 +2324,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     thirdBaseDot.setVisible(true);
                     thirdBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    thirdBaseRunner = away.get(playerAtBatAway).getName();
+                    thirdBaseRunnerLabel.setText(thirdBaseRunner + " (" + thirdBaseRunnerSpeed + ")");
+                    thirdBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     thirdBaseDot.setVisible(true);
                     thirdBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    thirdBaseRunner = home.get(playerAtBatHome).getName();
+                    thirdBaseRunnerLabel.setText(thirdBaseRunner + " (" + thirdBaseRunnerSpeed + ")");
+                    thirdBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2268,10 +2343,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    secondBaseRunner = away.get(playerAtBatAway).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    secondBaseRunner = home.get(playerAtBatHome).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2281,10 +2362,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    secondBaseRunner = away.get(playerAtBatAway).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    secondBaseRunner = home.get(playerAtBatHome).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2294,10 +2381,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    secondBaseRunner = away.get(playerAtBatAway).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    secondBaseRunner = home.get(playerAtBatHome).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2307,10 +2400,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    firstBaseRunner = away.get(playerAtBatAway).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    firstBaseRunner = home.get(playerAtBatHome).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2341,10 +2440,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    firstBaseRunner = away.get(playerAtBatAway).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    firstBaseRunner = home.get(playerAtBatHome).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2354,10 +2459,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    firstBaseRunner = away.get(playerAtBatAway).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    firstBaseRunner = home.get(playerAtBatHome).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2368,12 +2479,18 @@ public class Game {
                 if(teamAtBat == 0) {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    secondBaseRunner = away.get(playerAtBatAway).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                     strike++;
                     strikesNum.setText(Integer.toString(strike));
                 } else {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    secondBaseRunner = home.get(playerAtBatHome).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                     strike++;
                     strikesNum.setText(Integer.toString(strike));
@@ -2401,10 +2518,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     thirdBaseDot.setVisible(true);
                     thirdBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    thirdBaseRunner = away.get(playerAtBatAway).getName();
+                    thirdBaseRunnerLabel.setText(thirdBaseRunner + " (" + thirdBaseRunnerSpeed + ")");
+                    thirdBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     thirdBaseDot.setVisible(true);
                     thirdBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    thirdBaseRunner = home.get(playerAtBatHome).getName();
+                    thirdBaseRunnerLabel.setText(thirdBaseRunner + " (" + thirdBaseRunnerSpeed + ")");
+                    thirdBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2413,10 +2536,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     thirdBaseDot.setVisible(true);
                     thirdBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    thirdBaseRunner = away.get(playerAtBatAway).getName();
+                    thirdBaseRunnerLabel.setText(thirdBaseRunner + " (" + thirdBaseRunnerSpeed + ")");
+                    thirdBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     thirdBaseDot.setVisible(true);
                     thirdBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    thirdBaseRunner = home.get(playerAtBatHome).getName();
+                    thirdBaseRunnerLabel.setText(thirdBaseRunner + " (" + thirdBaseRunnerSpeed + ")");
+                    thirdBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2425,10 +2554,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    secondBaseRunner = away.get(playerAtBatAway).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    secondBaseRunner = home.get(playerAtBatHome).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2437,10 +2572,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    secondBaseRunner = away.get(playerAtBatAway).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    secondBaseRunner = home.get(playerAtBatHome).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2449,10 +2590,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    secondBaseRunner = away.get(playerAtBatAway).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    secondBaseRunner = home.get(playerAtBatHome).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2461,10 +2608,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    firstBaseRunner = away.get(playerAtBatAway).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    firstBaseRunner = home.get(playerAtBatHome).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2473,10 +2626,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    firstBaseRunner = away.get(playerAtBatAway).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    firstBaseRunner = home.get(playerAtBatHome).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2505,10 +2664,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    firstBaseRunner = away.get(playerAtBatAway).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    firstBaseRunner = home.get(playerAtBatHome).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2518,12 +2683,18 @@ public class Game {
                 if(teamAtBat == 0) {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    secondBaseRunner = away.get(playerAtBatAway).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                     strike++;
                     strikesNum.setText(Integer.toString(strike));
                 } else {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    secondBaseRunner = home.get(playerAtBatHome).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                     strike++;
                     strikesNum.setText(Integer.toString(strike));
@@ -2552,10 +2723,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     thirdBaseDot.setVisible(true);
                     thirdBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    thirdBaseRunner = away.get(playerAtBatAway).getName();
+                    thirdBaseRunnerLabel.setText(thirdBaseRunner + " (" + thirdBaseRunnerSpeed + ")");
+                    thirdBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     thirdBaseDot.setVisible(true);
                     thirdBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    thirdBaseRunner = home.get(playerAtBatHome).getName();
+                    thirdBaseRunnerLabel.setText(thirdBaseRunner + " (" + thirdBaseRunnerSpeed + ")");
+                    thirdBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2564,10 +2741,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     thirdBaseDot.setVisible(true);
                     thirdBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    thirdBaseRunner = away.get(playerAtBatAway).getName();
+                    thirdBaseRunnerLabel.setText(thirdBaseRunner + " (" + thirdBaseRunnerSpeed + ")");
+                    thirdBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     thirdBaseDot.setVisible(true);
                     thirdBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    thirdBaseRunner = home.get(playerAtBatHome).getName();
+                    thirdBaseRunnerLabel.setText(thirdBaseRunner + " (" + thirdBaseRunnerSpeed + ")");
+                    thirdBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2576,10 +2759,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    secondBaseRunner = away.get(playerAtBatAway).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    secondBaseRunner = home.get(playerAtBatHome).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2588,10 +2777,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    secondBaseRunner = away.get(playerAtBatAway).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    secondBaseRunner = home.get(playerAtBatHome).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2600,10 +2795,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    secondBaseRunner = away.get(playerAtBatAway).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    secondBaseRunner = home.get(playerAtBatHome).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2612,10 +2813,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    firstBaseRunner = away.get(playerAtBatAway).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    firstBaseRunner = home.get(playerAtBatHome).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2624,10 +2831,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    firstBaseRunner = away.get(playerAtBatAway).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    firstBaseRunner = home.get(playerAtBatHome).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2636,10 +2849,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    firstBaseRunner = away.get(playerAtBatAway).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    firstBaseRunner = home.get(playerAtBatHome).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2648,10 +2867,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    firstBaseRunner = away.get(playerAtBatAway).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    firstBaseRunner = home.get(playerAtBatHome).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2661,12 +2886,18 @@ public class Game {
                 if(teamAtBat == 0) {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    secondBaseRunner = away.get(playerAtBatAway).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                     strike++;
                     strikesNum.setText(Integer.toString(strike));
                 } else {
                     secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    secondBaseRunner = home.get(playerAtBatHome).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                     strike++;
                     strikesNum.setText(Integer.toString(strike));
@@ -2729,6 +2960,9 @@ public class Game {
                     } else {
                         firstBaseDot.setVisible(true);
                         firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                        firstBaseRunner = away.get(playerAtBatAway).getName();
+                        firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                        firstBaseRunnerLabel.setVisible(true);
                         awayNextBatter();
                     }
                 } else {
@@ -2740,6 +2974,9 @@ public class Game {
                     } else {
                         firstBaseDot.setVisible(true);
                         firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                        firstBaseRunner = home.get(playerAtBatHome).getName();
+                        firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                        firstBaseRunnerLabel.setVisible(true);
                         homeNextBatter();
                     }
                 }
@@ -2809,10 +3046,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    firstBaseRunner = away.get(playerAtBatAway).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    firstBaseRunner = home.get(playerAtBatHome).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2826,6 +3069,9 @@ public class Game {
                     } else {
                         firstBaseDot.setVisible(true);
                         firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                        firstBaseRunner = away.get(playerAtBatAway).getName();
+                        firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                        firstBaseRunnerLabel.setVisible(true);
                         awayNextBatter();
                     }
                 } else {
@@ -2836,6 +3082,9 @@ public class Game {
                     } else {
                         firstBaseDot.setVisible(true);
                         firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                        firstBaseRunner = home.get(playerAtBatHome).getName();
+                        firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                        firstBaseRunnerLabel.setVisible(true);
                         homeNextBatter();
                     }
                 }
@@ -2845,10 +3094,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    firstBaseRunner = away.get(playerAtBatAway).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    firstBaseRunner = home.get(playerAtBatHome).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -2897,10 +3152,16 @@ public class Game {
                 if(teamAtBat == 0) {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    firstBaseRunner = away.get(playerAtBatAway).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     awayNextBatter();
                 } else {
                     firstBaseDot.setVisible(true);
                     firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    firstBaseRunner = home.get(playerAtBatHome).getName();
+                    firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                    firstBaseRunnerLabel.setVisible(true);
                     homeNextBatter();
                 }
                 break;
@@ -3152,6 +3413,9 @@ public class Game {
                     if(ball == 4) {
                         firstBaseDot.setVisible(true);
                         firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                        firstBaseRunner = away.get(playerAtBatAway).getName();
+                        firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                        firstBaseRunnerLabel.setVisible(true);
                         awayNextBatter();
                     }
                 } else {
@@ -3160,6 +3424,9 @@ public class Game {
                     if(ball == 4) {
                         firstBaseDot.setVisible(true);
                         firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                        firstBaseRunner = home.get(playerAtBatHome).getName();
+                        firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                        firstBaseRunnerLabel.setVisible(true);
                         homeNextBatter();
                     }
                 }
@@ -3170,6 +3437,9 @@ public class Game {
                     if(homePitcherRating.equalsIgnoreCase("W")) {
                         firstBaseDot.setVisible(true);
                         firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                        firstBaseRunner = away.get(playerAtBatAway).getName();
+                        firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                        firstBaseRunnerLabel.setVisible(true);
                         awayNextBatter();
                     } else {
                         strike++;
@@ -3188,6 +3458,9 @@ public class Game {
                     if(awayPitcherRating.equalsIgnoreCase("W")) {
                         firstBaseDot.setVisible(true);
                         firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                        firstBaseRunner = home.get(playerAtBatHome).getName();
+                        firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                        firstBaseRunnerLabel.setVisible(true);
                         homeNextBatter();
                     } else {
                         strike++;
@@ -3210,6 +3483,9 @@ public class Game {
                     if(homePitcherRating.equalsIgnoreCase("W")) {
                         firstBaseDot.setVisible(true);
                         firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                        firstBaseRunner = away.get(playerAtBatAway).getName();
+                        firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                        firstBaseRunnerLabel.setVisible(true);
                         awayNextBatter();
                     } else {
                         ball++;
@@ -3217,6 +3493,9 @@ public class Game {
                         if(ball == 4) {
                             firstBaseDot.setVisible(true);
                             firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                            firstBaseRunner = away.get(playerAtBatAway).getName();
+                            firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                            firstBaseRunnerLabel.setVisible(true);
                             awayNextBatter();
                         }
                     }
@@ -3224,6 +3503,9 @@ public class Game {
                     if(awayPitcherRating.equalsIgnoreCase("W")) {
                         firstBaseDot.setVisible(true);
                         firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                        firstBaseRunner = home.get(playerAtBatHome).getName();
+                        firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                        firstBaseRunnerLabel.setVisible(true);
                         homeNextBatter();
                     } else {
                         ball++;
@@ -3231,6 +3513,9 @@ public class Game {
                         if(ball == 4) {
                             firstBaseDot.setVisible(true);
                             firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                            firstBaseRunner = home.get(playerAtBatHome).getName();
+                            firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                            firstBaseRunnerLabel.setVisible(true);
                             homeNextBatter();
                         }
                     }
@@ -3242,6 +3527,9 @@ public class Game {
                     if(homePitcherRating.equalsIgnoreCase("W")) {
                         firstBaseDot.setVisible(true);
                         firstBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                        firstBaseRunner = away.get(playerAtBatAway).getName();
+                        firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                        firstBaseRunnerLabel.setVisible(true);
                         awayNextBatter();
                     } else {
                         strike++;
@@ -3260,6 +3548,9 @@ public class Game {
                     if(awayPitcherRating.equalsIgnoreCase("W")) {
                         firstBaseDot.setVisible(true);
                         firstBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                        firstBaseRunner = home.get(playerAtBatHome).getName();
+                        firstBaseRunnerLabel.setText(firstBaseRunner + " (" + firstBaseRunnerSpeed + ")");
+                        firstBaseRunnerLabel.setVisible(true);
                         homeNextBatter();
                     } else {
                         strike++;
@@ -4684,25 +4975,39 @@ public class Game {
                 if(teamAtBat == 0) {
                     secondBaseDot.setVisible(true);
                     firstBaseDot.setVisible(false);
+                    firstBaseRunnerLabel.setVisible(false);
                     secondBaseRunnerSpeed = away.get(playerAtBatAway).getSpeed();
+                    secondBaseRunner = away.get(playerAtBatAway).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     if(firstBaseRunnerSpeed.equalsIgnoreCase("F") || out == 2) {
                         awayScore++;
                         awayScoreLabel.setText(Integer.toString(awayScore));
                     } else {
                         thirdBaseRunnerSpeed = firstBaseRunnerSpeed;
+                        thirdBaseRunner = firstBaseRunner;
+                        thirdBaseRunnerLabel.setText(thirdBaseRunner + " (" + thirdBaseRunnerSpeed + ")");
                         thirdBaseDot.setVisible(true);
+                        thirdBaseRunnerLabel.setVisible(true);
                     }
                     awayNextBatter();
                 } else {
                     secondBaseDot.setVisible(true);
                     firstBaseDot.setVisible(false);
+                    firstBaseRunnerLabel.setVisible(false);
                     secondBaseRunnerSpeed = home.get(playerAtBatHome).getSpeed();
+                    secondBaseRunner = home.get(playerAtBatHome).getName();
+                    secondBaseRunnerLabel.setText(secondBaseRunner + " (" + secondBaseRunnerSpeed + ")");
+                    secondBaseRunnerLabel.setVisible(true);
                     if(firstBaseRunnerSpeed.equalsIgnoreCase("F") || out == 2) {
                         homeScore++;
                         homeScoreLabel.setText(Integer.toString(homeScore));
                     } else {
                         thirdBaseRunnerSpeed = firstBaseRunnerSpeed;
+                        thirdBaseRunner = firstBaseRunner;
+                        thirdBaseRunnerLabel.setText(thirdBaseRunner + " (" + thirdBaseRunnerSpeed + ")");
                         thirdBaseDot.setVisible(true);
+                        thirdBaseRunnerLabel.setVisible(true);
                     }
                     homeNextBatter();
                 }
@@ -23182,9 +23487,9 @@ public class Game {
     }
 
     private void threeOuts() {
-        thirdBaseDot.setVisible(false);
-        firstBaseDot.setVisible(false);
-        secondBaseDot.setVisible(false);
+        runnerOffFirst();
+        runnerOffSecond();
+        runnerOffThird();
         checkInning();
         if(teamAtBat == 0) {
             awayNextBatter();

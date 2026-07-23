@@ -14,6 +14,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseButton;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -210,6 +211,12 @@ public class MainScreenController {
     private Label ball;
     @FXML
     private Label rightClickInfo;
+    @FXML
+    private Label thirdBaseRunnerLabel;
+    @FXML
+    private Label firstBaseRunnerLabel;
+    @FXML
+    private Label secondBaseRunnerLabel;
 
     @FXML
     private TextField player0;
@@ -348,6 +355,13 @@ public class MainScreenController {
     @FXML
     private Button nationals;
 
+    @FXML
+    private StackPane firstBaseStackPane;
+    @FXML
+    private StackPane secondBaseStackPane;
+    @FXML
+    private StackPane thirdBaseStackPane;
+
 
     private Image angelsLogo = new Image(getClass().getResourceAsStream("Logos/angelslogo.png"));
     private Image asLogo = new Image(getClass().getResourceAsStream("Logos/aslogo.png"));
@@ -418,6 +432,7 @@ public class MainScreenController {
 
         try {
             setButtonGraphics();
+            initBaseRunnerLabels();
             initAmericanButtons();
             initNationalButtons();
             initRightClickNational();
@@ -495,9 +510,21 @@ public class MainScreenController {
         firstBaseDot.setVisible(false);
         secondBaseDot.setVisible(false);
         thirdBaseDot.setVisible(false);
+        firstBaseRunnerLabel.setVisible(false);
+        secondBaseRunnerLabel.setVisible(false);
+        thirdBaseRunnerLabel.setVisible(false);
+        firstBaseStackPane.setVisible(false);
+        secondBaseStackPane.setVisible(false);
+        thirdBaseStackPane.setVisible(false);
         checkNumSelected();
         allButtonsOpaque();
         resetLineups();
+    }
+
+    private void initBaseRunnerLabels() {
+        StackPane.setAlignment(thirdBaseRunnerLabel, Pos.TOP_CENTER);
+        StackPane.setAlignment(secondBaseRunnerLabel, Pos.TOP_CENTER);
+        StackPane.setAlignment(firstBaseRunnerLabel, Pos.TOP_CENTER);
     }
 
     private void initAmericanButtons() {
@@ -1784,6 +1811,12 @@ public class MainScreenController {
         firstBaseDot.setVisible(false);
         secondBaseDot.setVisible(false);
         thirdBaseDot.setVisible(false);
+        firstBaseRunnerLabel.setVisible(false);
+        secondBaseRunnerLabel.setVisible(false);
+        thirdBaseRunnerLabel.setVisible(false);
+        firstBaseStackPane.setVisible(false);
+        secondBaseStackPane.setVisible(false);
+        thirdBaseStackPane.setVisible(false);
 
         start.setVisible(true);
         exit.setVisible(true);
@@ -2896,7 +2929,8 @@ public class MainScreenController {
             newGame = new Game();
             gameStage = newGame.startGame(homeBattingOrder, awayBattingOrder, thirdBaseDot, secondBaseDot, firstBaseDot,
                     pitchingGradeAway, pitchingGradeHome, pitchingRatingAway, pitchingRatingHome,
-                    awayFieldingGrade, homeFieldingGrade, awayImage, homeImage, homePitcherName, awayPitcherName);
+                    awayFieldingGrade, homeFieldingGrade, awayImage, homeImage, homePitcherName, awayPitcherName, firstBaseRunnerLabel,
+                    secondBaseRunnerLabel, thirdBaseRunnerLabel, firstBaseStackPane, secondBaseStackPane, thirdBaseStackPane);
             
             gameStage.setOnCloseRequest(event2 -> {
                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION);

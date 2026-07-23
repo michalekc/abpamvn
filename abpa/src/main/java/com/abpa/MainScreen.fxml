@@ -11,6 +11,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.abpa.MainScreenController">
@@ -168,21 +169,6 @@
             <Font name="Gill Sans Ultra Bold" size="22.0" />
          </font>
       </Label>
-      <ImageView fx:id="secondBaseDot" fitHeight="50.0" fitWidth="50.0" layoutX="427.0" layoutY="210.0" pickOnBounds="true" visible="false">
-         <image>
-            <Image url="@Icons/redcircle.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="thirdBaseDot" fitHeight="50.0" fitWidth="50.0" layoutX="165.0" layoutY="440.0" pickOnBounds="true" visible="false">
-         <image>
-            <Image url="@Icons/redcircle.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="firstBaseDot" fitHeight="50.0" fitWidth="50.0" layoutX="688.0" layoutY="440.0" pickOnBounds="true" visible="false">
-         <image>
-            <Image url="@Icons/redcircle.png" />
-         </image>
-      </ImageView>
       <TextField fx:id="player0" editable="false" layoutX="289.0" layoutY="206.0" visible="false" />
       <TextField fx:id="player1" editable="false" layoutX="289.0" layoutY="246.0" visible="false" />
       <TextField fx:id="player2" editable="false" layoutX="289.0" layoutY="286.0" visible="false" />
@@ -241,5 +227,47 @@
       </MenuButton>
       <ImageView fx:id="homeTeamLogoFx" fitHeight="82.0" fitWidth="82.0" layoutX="51.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true" visible="false" />
       <ImageView fx:id="awayTeamLogoFx" fitHeight="82.0" fitWidth="82.0" layoutX="51.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <StackPane fx:id="thirdBaseStackPane" layoutX="97.0" layoutY="413.0" prefHeight="94.0" prefWidth="188.0" visible="false">
+         <children>
+            <ImageView fx:id="thirdBaseDot" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" visible="false">
+               <image>
+                  <Image url="@Icons/redcircle.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="thirdBaseRunnerLabel" visible="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <StackPane fx:id="secondBaseStackPane" layoutX="357.0" layoutY="188.0" prefHeight="94.0" prefWidth="188.0" visible="false">
+         <children>
+            <ImageView fx:id="secondBaseDot" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" visible="false">
+               <image>
+                  <Image url="@Icons/redcircle.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="secondBaseRunnerLabel" visible="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <StackPane fx:id="firstBaseStackPane" layoutX="618.0" layoutY="418.0" prefHeight="94.0" prefWidth="188.0" visible="false">
+         <children>
+            <ImageView fx:id="firstBaseDot" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" visible="false">
+               <image>
+                  <Image url="@Icons/redcircle.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="firstBaseRunnerLabel" visible="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
    </children>
 </Pane>
