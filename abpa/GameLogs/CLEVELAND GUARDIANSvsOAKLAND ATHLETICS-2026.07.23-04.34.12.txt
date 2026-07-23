@@ -1,0 +1,21 @@
+OAKLAND ATHLETICS OUTCOMES: 
+	Top of Inning 1 - Tyler Ladendorf: SINGLE to left; batter steals 2nd on first pitch to next batter; one strike on batter | Jake Smolinski: Pop fly out; PO-SS | Matt Joyce: Out at 1st; runner to 3rd A-3B PO-1B | Stephen Piscotty: Fly out; runner holds; PO-CF (F scores) | 
+	Top of Inning 2 - Khris Davis: Strikeout; PO-C | Marcus Semien: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Jed Lowrie: Safe at first; FC; runner out; A-SS PO-2B | Jonathan Lucroy: Strikeout; PO-C | 
+	Top of Inning 3 - Brett Anderson: Fly out; PO-RF | Tyler Ladendorf: Out at 1st; A-SS PO-1B | Jake Smolinski: Fly out; PO-CF | 
+	Top of Inning 4 - Matt Joyce: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Matt Joyce: Runner out stealing; A-C PO-SS | Stephen Piscotty: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Khris Davis: Out at 1st; A-2B PO-1B | 
+	Top of Inning 5 - Marcus Semien: Out at 1st; A-P PO-1B (X-SO; PO-C) | Jed Lowrie: Out at 1st; A-3B PO-1B | Jonathan Lucroy: SINGLE to center | Jonathan Lucroy: Runner out stealing; A-C PO-SS; If 2 outs then balk runner to 2nd | Brett Anderson: Fly out; runner holds; PO-RF | 
+	Top of Inning 6 - Tyler Ladendorf: Strikeout; PO-C | Jake Smolinski: SINGLE to right | Matt Joyce: Fly out; runner holds (F to 2nd); PO-CF | Stephen Piscotty: DOUBLE over 1st; runner to 3rd (F scores); If 2 outs, any runner scores | Khris Davis: Strikeout; PO-C | 
+	Top of Inning 7 - Marcus Semien: Out at 1st; A-SS PO-1B | Jed Lowrie: Fly out; PO-CF | Jonathan Lucroy: Out at 1st; A-SS PO-1B | 
+	Top of Inning 8 - Brett Anderson: Strikeout; PO-C | Tyler Ladendorf: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Tyler Ladendorf: Foul (W-Base on balls) | Jake Smolinski: Out at 1st; A-3B PO-1B | 
+	Top of Inning 9 - Matt Joyce: Strikeout; PO-C | Stephen Piscotty: SINGLE to right | Stephen Piscotty: Runner out stealing; A-C PO-SS | Khris Davis: Out at 1st; A-1B PO-P | 
+CLEVELAND GUARDIANS OUTCOMES: 
+	Bottom of Inning 1 - Rajai Davis: Out at 1st; A-SS PO-1B | Yonder Alonso: Out at 1st; A-P PO-1B (X-SO; PO-C) | Melky Cabrera: Out at 1st; A-P PO-1B (X-SO; PO-C) | 
+	Bottom of Inning 2 - Jose Ramirez: Fly out; PO-LF | Francisco Lindor: Fly out; PO-RF | Jason Kipnis: Out at 1st; A-3B PO-1B | 
+	Bottom of Inning 3 - Yan Gomes: Fly out; PO-RF | Andrew Miller: Strikeout; PO-C | Leonys Martin: Strikeout; PO-C | 
+	Bottom of Inning 4 - Leonys Martin: Foul (W-Base on balls) | Rajai Davis: SINGLE to left; batter steals 2nd on first pitch to next batter; one strike on batter | Yonder Alonso: SINGLE to right; runner scores | Melky Cabrera: DOUBLE over 1st; runner to 3rd (F scores); If 2 outs, any runner scores | Jose Ramirez: SINGLE to left; runners advance 1 base (If 2 outs, both score); batter steals 2nd; 1 ball and 1 strike on batter | Francisco Lindor: Fly out; runners advance 1 base; PO-RF | Jason Kipnis: SINGLE thru shortstop; runner scores; (X - out at 1st; runner scores; A-SS PO-1B) | Yan Gomes: Pop fly out; PO-SS (Y-SO; PO-C) | Andrew Miller: Strikeout; PO-C | 
+	Bottom of Inning 5 - Leonys Martin: Strikeout; PO-C | Rajai Davis: Strikeout; PO-C | Yonder Alonso: SINGLE to left center | Melky Cabrera: SINGLE; line drive to center; runner to 3rd (S out at 3rd; A-CF PO-3B) | 
+	Bottom of Inning 6 - Jose Ramirez: Fly out; PO-LF | Francisco Lindor: DOUBLE to right center | Jason Kipnis: HOMERUN over center field fence | Yan Gomes: Pop fly out PO-3B | Andrew Miller: 1st on error; E-CF | Leonys Martin: Strikeout; PO-C | 
+	Bottom of Inning 7 - Rajai Davis: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Yonder Alonso: Strikeout; PO-C | Melky Cabrera: Batter safe at first; FC; runner out at 2nd; A-2B PO-SS | Jose Ramirez: Double play; A-SS PO-2B A-2B PO-1B | 
+	Bottom of Inning 8 - Francisco Lindor: SINGLE to left; batter steals 2nd on first pitch to next batter; one strike on batter | Jason Kipnis: DOUBLE to left center; runner scores | Yan Gomes: 1st on error; runner holds; E-SS; If 2 outs, runner to 3rd | Andrew Miller: Infield fly; PO-SS | Leonys Martin: Batter safe at 1st; one runner out at 2nd; other safe at 3rd; A-SS PO-2B; FC | Rajai Davis: Fly out; one scores; other holds; PO-LF (S out at home; A-LF PO-C; DP) | 
+FINAL SCORE: 
+	Cleveland Guardians: 7 Oakland Athletics: 1

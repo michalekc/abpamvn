@@ -1,0 +1,22 @@
+LOS ANGELES ANGELS OUTCOMES: 
+	Top of Inning 1 - Christopher Young: Out at 1st; A-2B PO-1B | Zack Cozart: SINGLE over short | Ryan Schimpf: SINGLE to right; runner to third; F batter to 2nd on throw to 3rd | Justin Upton: Strikeout; PO-C | Albert Pujols: Base on balls; filling the bases | Mike Trout: Base on balls | David Fletcher: Line drive out; runners hold; PO-2B | 
+	Top of Inning 2 - Francisco Arcia: Fly out; PO-LF | Shohei Ohtani: Out at 1st; A-2B PO-1B (X-SO; PO-C) | Christopher Young: Out at 1st; A-3B PO-1B (X-SO; PO-C) | 
+	Top of Inning 3 - Zack Cozart: Pop fly out; PO-2B (Y-SO; PO-C) | Ryan Schimpf: Out at 1st; A-2B PO-1B | Justin Upton: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Albert Pujols: SINGLE; beats out infield hit; runner to 2nd | Mike Trout: Fly out; runners hold; PO-RF | 
+	Top of Inning 4 - David Fletcher: Strikeout; PO-C | David Fletcher: Ball (W-Base on balls) | Francisco Arcia: Out at 1st; A-3B PO-1B | Shohei Ohtani: Out at 1st; A-SS PO-1B | 
+	Top of Inning 5 - Christopher Young: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Zack Cozart: DOUBLE over 1st; runner to 3rd (F scores); If 2 outs, any runner scores | Ryan Schimpf: Fly out; runner holds; PO-LF | Justin Upton: SINGLE over 2nd; runner scores (S out at home; A-CF PO-C; batter to 2nd) | Albert Pujols: Strikeout; PO-C | Mike Trout: Foul out; PO-C (W-Base on balls) | 
+	Top of Inning 6 - David Fletcher: Pop fly out; PO-2B (Y-SO; PO-C) | Francisco Arcia: HOMERUN over right field fence | Shohei Ohtani: Out at 1st; A-SS PO-1B | Christopher Young: Strikeout; PO-C | 
+	Top of Inning 7 - Zack Cozart: Fly out PO-CF | Ryan Schimpf: SINGLE over short | Justin Upton: Out at 1st; runner to 2nd; A-P PO-1B (Y-SO; PO-C) | Albert Pujols: Strikeout; PO-C | 
+	Top of Inning 8 - Mike Trout: Fly out; PO-CF | David Fletcher: Out at 1st; A-3B PO-1B | Francisco Arcia: 1st on error; E-SS | Shohei Ohtani: Fly out; runner holds; PO-LF | 
+	Top of Inning 9 - Christopher Young: Out at 1st; A-2B PO-1B | Zack Cozart: Fly out PO-CF | Ryan Schimpf: Strikeout; PO-C | 
+ATLANTA BRAVES OUTCOMES: 
+	Bottom of Inning 1 - Ender Inciarte: TRIPLE to left center | Ozzie Albies: Bunt fly out; PO-P | Ronald Acuna: Foul out; PO-SS (W-base on balls) | Freddie Freeman: Strikeout; PO-C | 
+	Bottom of Inning 2 - Nick Markakis: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Ryan Flaherty: Safe at first; FC; runner out; A-SS PO-2B | Julio Teheran: Out at 1st; runner to 2nd; A-3B PO-1B | Adam Duvall: Fly out; runner holds; PO-RF | 
+	Bottom of Inning 3 - Kurt Suzuki: Out at 1st; A-3B PO-1B | Ender Inciarte: Out at 1st; A-2B PO-1B | Ender Inciarte: Ball | Ozzie Albies: Fly out PO-CF | 
+	Bottom of Inning 4 - Ronald Acuna: SINGLE over short | Freddie Freeman: Fly out; runner holds; PO-CF | Nick Markakis: Out at 1st; runner to 2nd; A-3B PO-1B | Ryan Flaherty: Strikeout; PO-C | 
+	Bottom of Inning 5 - Julio Teheran: Strikeout; PO-C | Adam Duvall: Fly out; PO-RF | Adam Duvall: Ball | Kurt Suzuki: Fly out; PO-LF | 
+	Bottom of Inning 6 - Ender Inciarte: SINGLE to right | Ozzie Albies: Fly out; runner holds; PO-CF | Ronald Acuna: DOUBLE over 1st; runner to 3rd (F scores); If 2 outs, any runner scores | Freddie Freeman: Out at 1st; runner holds; A-3B PO-1B | Nick Markakis: Out at 1st; runner to 3rd A-3B PO-1B | 
+	Bottom of Inning 7 - Ryan Flaherty: Out at 1st; A-P PO-1B (X-SO; PO-C) | Julio Teheran: Fly out PO-CF | Adam Duvall: Out at 1st; A-3B PO-1B | 
+	Bottom of Inning 8 - Kurt Suzuki: Strikeout; PO-C | Ender Inciarte: Fly out; PO-CF | Ozzie Albies: Strikeout; PO-C | 
+	Bottom of Inning 9 - Ronald Acuna: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Freddie Freeman: Fly out; runner holds; PO-RF | Nick Markakis: Double play; A-SS PO-2B A-2B PO-1B | 
+FINAL SCORE: 
+	Los Angeles Angels: 4 Atlanta Braves: 1

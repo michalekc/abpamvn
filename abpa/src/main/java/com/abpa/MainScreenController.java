@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.ButtonBar.ButtonData;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseButton;
@@ -56,7 +57,7 @@ public class MainScreenController {
     private boolean bluejaysClicked = false;
     private boolean oriolesClicked = false;
     private boolean raysClicked = false;
-    private boolean indiansClicked = false;
+    private boolean guardiansClicked = false;
     private boolean tigersClicked = false;
     private boolean twinsClicked = false;
     private boolean royalsClicked = false;
@@ -105,12 +106,14 @@ public class MainScreenController {
 
     private static String DEFAULT_ROSTER_TEXT = "Choose Roster Year";
 
+    private Stage gameStage;
+
     private final int MARINERS = 1;
     private final int ASTROS = 2;
     private final int ANGELS = 3;
     private final int ATHLETICS = 4;
     private final int RANGERS = 5;
-    private final int INDIANS = 6;
+    private final int GUARDIANS = 6;
     private final int TIGERS = 7;
     private final int TWINS = 8;
     private final int ROYALS = 9;
@@ -138,7 +141,7 @@ public class MainScreenController {
     private int teamRightClicked = 0;
 
     private static String[] teams = {"ERROR", "Seattle Mariners", "Houston Astros", "Los Angeles Angels", "Oakland Athletics",
-            "Texas Rangers", "Cleveland Indians", "Detroit Tigers", "Minnesota Twins","Kansas City Royals",
+            "Texas Rangers", "Cleveland Guardians", "Detroit Tigers", "Minnesota Twins","Kansas City Royals",
             "Chicago White Sox", "Boston Red Sox", "New York Yankees","Tampa Bay Rays", "Toronto Blue Jays",
             "Baltimore Orioles", "Atlanta Braves","Washington Nationals", "New York Mets", "Philadelphia Phillies",
             "Miami Marlins","Milwaukee Brewers", "Chicago Cubs", "St. Louis Cardinals", "Pittsburgh Pirates",
@@ -279,6 +282,10 @@ public class MainScreenController {
     private ImageView secondBaseDot;
     @FXML
     private ImageView thirdBaseDot;
+    @FXML
+    private ImageView homeTeamLogoFx;
+    @FXML
+    private ImageView awayTeamLogoFx;
 
     @FXML
     private Button rays;
@@ -291,7 +298,7 @@ public class MainScreenController {
     @FXML
     private Button orioles;
     @FXML
-    private Button indians;
+    private Button guardians;
     @FXML
     private Button tigers;
     @FXML
@@ -352,7 +359,7 @@ public class MainScreenController {
     private Image dbacksLogo = new Image(getClass().getResourceAsStream("Logos/dbackslogo.png"));
     private Image dodgersLogo = new Image(getClass().getResourceAsStream("Logos/dodgerslogo.png"));
     private Image giantsLogo = new Image(getClass().getResourceAsStream("Logos/giantslogo.png"));
-    private Image indiansLogo = new Image(getClass().getResourceAsStream("Logos/indianslogo.png"));
+    private Image guardiansLogo = new Image(getClass().getResourceAsStream("Logos/guardianslogo.png"));
     private Image jaysLogo = new Image(getClass().getResourceAsStream("Logos/jayslogo.png"));
     private Image marinersLogo = new Image(getClass().getResourceAsStream("Logos/marinerslogo.png"));
     private Image marlinsLogo = new Image(getClass().getResourceAsStream("Logos/marlinslogo.png"));
@@ -439,7 +446,7 @@ public class MainScreenController {
         redsox.setGraphic(new ImageView(redsoxLogo));
         yankees.setGraphic(new ImageView(yankeesLogo));
         orioles.setGraphic(new ImageView(oriolesLogo));
-        indians.setGraphic(new ImageView(indiansLogo));
+        guardians.setGraphic(new ImageView(guardiansLogo));
         tigers.setGraphic(new ImageView(tigersLogo));
         royals.setGraphic(new ImageView(royalsLogo));
         twins.setGraphic(new ImageView(twinsLogo));
@@ -466,6 +473,33 @@ public class MainScreenController {
         cardinals.setGraphic(new ImageView(cardinalsLogo));
     }
 
+    private void quitToTeamSelectFunc() {
+        //END GAME
+        newGame.quitGame();
+        quitToTeamSelect.setVisible(false);
+        teamSelectScreen();
+        NUM_SELECTED = 0;
+        home.setVisible(false);
+        homeTeamLogoFx.setVisible(false);
+        away.setVisible(false);
+        awayTeamLogoFx.setVisible(false);
+        lineup.setVisible(false);
+        homeTeamLabel.setVisible(true);
+        choose.setVisible(true);
+        setBattingOrderAway.setVisible(false);
+        setBattingOrderHome.setVisible(false);
+        awayTeamBattingOrderLabel.setVisible(false);
+        homeTeamBattingOrderLabel.setVisible(false);
+        awayFieldingPoints = 0;
+        homeFieldingPoints = 0;
+        firstBaseDot.setVisible(false);
+        secondBaseDot.setVisible(false);
+        thirdBaseDot.setVisible(false);
+        checkNumSelected();
+        allButtonsOpaque();
+        resetLineups();
+    }
+
     private void initAmericanButtons() {
         backToMain.setOnAction(e -> {
             allButtonsInvisible();
@@ -480,35 +514,16 @@ public class MainScreenController {
                     "Are You Sure?", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE,
                     null, options, options[0]);
             if(n == 0) {
-                //END GAME
-                newGame.quitGame();
-                quitToTeamSelect.setVisible(false);
-                teamSelectScreen();
-                NUM_SELECTED = 0;
-                home.setVisible(false);
-                away.setVisible(false);
-                lineup.setVisible(false);
-                homeTeamLabel.setVisible(true);
-                choose.setVisible(true);
-                setBattingOrderAway.setVisible(false);
-                setBattingOrderHome.setVisible(false);
-                awayTeamBattingOrderLabel.setVisible(false);
-                homeTeamBattingOrderLabel.setVisible(false);
-                awayFieldingPoints = 0;
-                homeFieldingPoints = 0;
-                firstBaseDot.setVisible(false);
-                secondBaseDot.setVisible(false);
-                thirdBaseDot.setVisible(false);
-                checkNumSelected();
-                allButtonsOpaque();
-                resetLineups();
+                quitToTeamSelectFunc();
             }
         });
         backToTeamSelect.setOnAction(e -> {
             teamSelectScreen();
             NUM_SELECTED = 0;
             home.setVisible(false);
+            homeTeamLogoFx.setVisible(false);
             away.setVisible(false);
+            awayTeamLogoFx.setVisible(false);
             lineup.setVisible(false);
             homeTeamLabel.setVisible(true);
             choose.setVisible(true);
@@ -633,24 +648,24 @@ public class MainScreenController {
                 checkNumSelected();
             }
         });
-        indians.setOnAction(e -> {
-            if(indiansClicked) {
-                indians.setOpacity(1);
-                indiansClicked = false;
+        guardians.setOnAction(e -> {
+            if(guardiansClicked) {
+                guardians.setOpacity(1);
+                guardiansClicked = false;
                 NUM_SELECTED--;
                 HOME_SELECTED = 0;
                 AWAY_SELECTED = 0;
                 checkNumSelected();
             } else {
-                indians.setOpacity(0.4);
-                indiansClicked = true;
+                guardians.setOpacity(0.4);
+                guardiansClicked = true;
                 NUM_SELECTED++;
                 if(NUM_SELECTED == 1) {
-                    HOME_SELECTED = INDIANS;
-                    homeImage = indiansLogo;
+                    HOME_SELECTED = GUARDIANS;
+                    homeImage = guardiansLogo;
                 } else if(NUM_SELECTED == 2) {
-                    AWAY_SELECTED = INDIANS;
-                    awayImage = indiansLogo;
+                    AWAY_SELECTED = GUARDIANS;
+                    awayImage = guardiansLogo;
                 }
                 checkNumSelected();
             }
@@ -1312,9 +1327,9 @@ public class MainScreenController {
                 displayRoster();
             }
         });
-        indians.setOnMouseClicked(e -> {
+        guardians.setOnMouseClicked(e -> {
             if(e.getButton().equals(MouseButton.SECONDARY)) {
-                TEAM_SELECTED = INDIANS;
+                TEAM_SELECTED = GUARDIANS;
                 displayRoster();
             }
         });
@@ -1477,10 +1492,10 @@ public class MainScreenController {
                 rosterWindow.getIcons().add(oriolesLogo);
                 teamRightClicked = ORIOLES;
                 break;
-            case INDIANS:
-                rosterInfo.setItems(mainData.getIndians());
-                rosterWindow.getIcons().add(indiansLogo);
-                teamRightClicked = INDIANS;
+            case GUARDIANS:
+                rosterInfo.setItems(mainData.getGuardians());
+                rosterWindow.getIcons().add(guardiansLogo);
+                teamRightClicked = GUARDIANS;
                 break;
             case TWINS:
                 rosterInfo.setItems(mainData.getTwins());
@@ -1592,7 +1607,7 @@ public class MainScreenController {
         yankees.setVisible(true);
         redsox.setVisible(true);
         orioles.setVisible(true);
-        indians.setVisible(true);
+        guardians.setVisible(true);
         twins.setVisible(true);
         whitesox.setVisible(true);
         royals.setVisible(true);
@@ -1626,7 +1641,7 @@ public class MainScreenController {
         yankees.setVisible(false);
         redsox.setVisible(false);
         orioles.setVisible(false);
-        indians.setVisible(false);
+        guardians.setVisible(false);
         twins.setVisible(false);
         whitesox.setVisible(false);
         royals.setVisible(false);
@@ -1685,6 +1700,8 @@ public class MainScreenController {
         westA.setVisible(false);
         westN.setVisible(false);
         home.setVisible(true);
+        homeTeamLogoFx.setImage(homeImage);
+        homeTeamLogoFx.setVisible(true);
         lineup.setVisible(true);
         choose.setVisible(false);
         awayTeamLabel.setVisible(false);
@@ -1714,7 +1731,10 @@ public class MainScreenController {
         setLineup1.setVisible(false);
         setLineup2.setVisible(true);
         away.setVisible(true);
+        awayTeamLogoFx.setImage(awayImage);
+        awayTeamLogoFx.setVisible(true);
         home.setVisible(false);
+        homeTeamLogoFx.setVisible(false);
         clearLineupPositions();
         teamSetupForChoiceBoxes(AWAY_SELECTED);
     }
@@ -1815,7 +1835,7 @@ public class MainScreenController {
         rays.setOpacity(1);
         orioles.setOpacity(1);
         tigers.setOpacity(1);
-        indians.setOpacity(1);
+        guardians.setOpacity(1);
         twins.setOpacity(1);
         royals.setOpacity(1);
         whitesox.setOpacity(1);
@@ -1848,7 +1868,7 @@ public class MainScreenController {
         bluejaysClicked = false;
         oriolesClicked = false;
         raysClicked = false;
-        indiansClicked = false;
+        guardiansClicked = false;
         tigersClicked = false;
         twinsClicked = false;
         royalsClicked = false;
@@ -2001,8 +2021,8 @@ public class MainScreenController {
                     setChoiceBoxes(r);
                 }
                 break;
-            case INDIANS:
-                for(Player r : mainData.getIndians()) {
+            case GUARDIANS:
+                for(Player r : mainData.getGuardians()) {
                     setChoiceBoxes(r);
                 }
                 break;
@@ -2184,8 +2204,8 @@ public class MainScreenController {
                     checkPlayerHomeTeam(r);
                 }
                 break;
-            case INDIANS:
-                for(Player r : mainData.getIndians()) {
+            case GUARDIANS:
+                for(Player r : mainData.getGuardians()) {
                     checkPlayerHomeTeam(r);
                 }
                 break;
@@ -2339,8 +2359,8 @@ public class MainScreenController {
                     checkPlayerAwayTeam(r);
                 }
                 break;
-            case INDIANS:
-                for(Player r : mainData.getIndians()) {
+            case GUARDIANS:
+                for(Player r : mainData.getGuardians()) {
                     checkPlayerAwayTeam(r);
                 }
                 break;
@@ -2661,6 +2681,7 @@ public class MainScreenController {
         leftField.setVisible(false);
         rightField.setVisible(false);
         away.setVisible(false);
+        awayTeamLogoFx.setVisible(false);
         lineup.setVisible(false);
         setLineup2.setVisible(false);
 
@@ -2873,9 +2894,32 @@ public class MainScreenController {
             calculateAwayFieldingGrade();
             calculateHomeFieldingGrade();
             newGame = new Game();
-            newGame.startGame(homeBattingOrder, awayBattingOrder, thirdBaseDot, secondBaseDot, firstBaseDot,
+            gameStage = newGame.startGame(homeBattingOrder, awayBattingOrder, thirdBaseDot, secondBaseDot, firstBaseDot,
                     pitchingGradeAway, pitchingGradeHome, pitchingRatingAway, pitchingRatingHome,
                     awayFieldingGrade, homeFieldingGrade, awayImage, homeImage, homePitcherName, awayPitcherName);
+            
+            gameStage.setOnCloseRequest(event2 -> {
+                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                ButtonType customExit = new ButtonType("Exit", ButtonData.OK_DONE);
+                ButtonType customNo = new ButtonType("Cancel", ButtonData.CANCEL_CLOSE);
+                alert.setTitle("Exit Game?");
+                alert.setHeaderText("Do you want to exit the game?");
+                alert.getButtonTypes().setAll(customExit, customNo);
+
+                var result = alert.showAndWait();
+
+                if(result.isPresent() && result.get() == customExit) {
+                    
+                } else {
+                    event2.consume();
+                }
+            });
+
+            gameStage.showingProperty().addListener((observable, oldValue, isShowing) -> {
+                if(!isShowing) {
+                    quitToTeamSelectFunc();
+                }
+            });
         });
     }
 
@@ -3115,8 +3159,8 @@ public class MainScreenController {
                     }
                 }
                 break;
-            case INDIANS:
-                for(Player r : mainData.getIndians()) {
+            case GUARDIANS:
+                for(Player r : mainData.getGuardians()) {
                     if(name.equalsIgnoreCase(r.getName())) {
                         setLabels(r, comp);
                         checkPos(r, pos, throwHand, bats, position);

@@ -1,0 +1,21 @@
+LOS ANGELES DODGERS OUTCOMES: 
+	Top of Inning 1 - Corey Seager: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Yasiel Puig: Double play; A-SS PO-2B A-2B PO-1B | Justin Turner: Out at 1st; A-P PO-1B (X-SO; PO-C) | 
+	Top of Inning 2 - Max Muncy: Fly out; PO-1B | Manuel Machado: Out at 1st; A-SS PO-1B | Brian Dozier: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Yasmani Grandal: Out at 1st; runner to 2nd; A-P PO-1B (Y-SO; PO-C) | 
+	Top of Inning 3 - Clayton Kershaw: Fly out; PO-CF | Cody Bellinger: HOMERUN over right field fence | Corey Seager: Fly out PO-CF | Yasiel Puig: Pop fly out; PO-2B (Y-SO; PO-C) | 
+	Top of Inning 4 - Justin Turner: Fly out PO-CF | Max Muncy: DOUBLE over 1st | Manuel Machado: Fly out; runner holds; PO-RF | Brian Dozier: Fly out; runner holds; PO-CF | 
+	Top of Inning 5 - Yasmani Grandal: Out at 1st; A-SS PO-1B | Clayton Kershaw: Strikeout; PO-C | Cody Bellinger: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Corey Seager: Out at 1st; runner to 2nd; A-3B PO-1B | 
+	Top of Inning 6 - Yasiel Puig: Fly out; PO-RF | Justin Turner: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Max Muncy: Pop fly out; PO-SS (Y-SO; PO-C) | 
+	Top of Inning 7 - Manuel Machado: Out at 1st; A-2B PO-1B | Brian Dozier: Out at 1st; A-SS PO-1B | Yasmani Grandal: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Clayton Kershaw: Batter safe at first; FC; runner out at 2nd; A-2B PO-SS | 
+	Top of Inning 8 - Cody Bellinger: HOMERUN over right field fence | Corey Seager: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Yasiel Puig: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Justin Turner: Strikeout; PO-C | 
+	Top of Inning 9 - Max Muncy: Fly out; PO-CF | Manuel Machado: SINGLE over short | Brian Dozier: Batter safe at first; FC; runner out at 2nd; A-2B PO-SS | Yasmani Grandal: Base on balls, runner to 2nd; batter to 1st (ZZ Pitcher : ball) | Clayton Kershaw: Strikeout; PO-C | 
+LOS ANGELES ANGELS OUTCOMES: 
+	Bottom of Inning 1 - Christopher Young: Strikeout; PO-C | Zack Cozart: Strikeout; PO-C | Ryan Schimpf: Strikeout; PO-C | 
+	Bottom of Inning 2 - Justin Upton: Fly out; PO-RF | Albert Pujols: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Mike Trout: SINGLE over 1st; runner to 3rd; batter steals 2nd on third pitch; two balls, one strike on batter | David Fletcher: Foul out; PO-1B (W-Base on balls) | Francisco Arcia: SINGLE over 1st; runners score; (S on 2nd out at home; A-RF PO-C; batter to 2nd) | Shohei Ohtani: DOUBLE over 1st; runner to 3rd (F scores); If 2 outs, any runner scores | Shohei Ohtani: Runner steals 3rd (S holds 2nd) | Christopher Young: Out at 1st; runner to 3rd; A-1B PO-P | 
+	Bottom of Inning 3 - Zack Cozart: Out at 1st; A-3B PO-1B | Ryan Schimpf: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Justin Upton: SINGLE; beats out infield hit; runner to 2nd | Albert Pujols: Base on balls; fills the bases | Mike Trout: Batter safe at 1st; FC; runner force out at home; others advance 1 base; A-P PO-C | David Fletcher: TRIPLE over third | Francisco Arcia: HOMERUN to left field | Shohei Ohtani: Strikeout; PO-C | 
+	Bottom of Inning 4 - Christopher Young: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Zack Cozart: Double play; A-SS PO-2B A-2B PO-1B | Ryan Schimpf: Out at 1st; A-2B PO-1B (X-SO; PO-C) | 
+	Bottom of Inning 5 - Justin Upton: Out at 1st; A-2B PO-1B | Albert Pujols: Strikeout; PO-C | Mike Trout: Strikeout; PO-C | 
+	Bottom of Inning 6 - David Fletcher: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Francisco Arcia: Strikeout; PO-C | Shohei Ohtani: Strikeout; PO-C | 
+	Bottom of Inning 7 - Christopher Young: Fly out; PO-LF | Zack Cozart: Pop fly out; PO-SS (Y-SO; PO-C) | Ryan Schimpf: Pop fly out; PO-SS (Y-SO; PO-C) | 
+	Bottom of Inning 8 - Justin Upton: Strikeout; PO-C | Albert Pujols: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Mike Trout: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | David Fletcher: Strikeout; PO-C | 
+FINAL SCORE: 
+	Los Angeles Angels: 8 Los Angeles Dodgers: 2

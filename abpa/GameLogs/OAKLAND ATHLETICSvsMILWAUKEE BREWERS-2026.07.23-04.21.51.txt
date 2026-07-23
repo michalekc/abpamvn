@@ -1,0 +1,22 @@
+MILWAUKEE BREWERS OUTCOMES: 
+	Top of Inning 1 - Ryan Braun: Out at 1st; A-2B PO-1B (X-SO; PO-C) | Christian Yelich: Out at 1st; A-2B PO-1B | Lorenzo Cain: Fly out; PO-CF | 
+	Top of Inning 2 - Mike Moustakas: 1st on error; E-2B | Orlando Arcia: SINGLE; line drive to center; runner to 3rd (S out at 3rd; A-CF PO-3B) | Jesus Aguilar: Fly out; one runner scores; other holds; PO-CF | Jacob Nottingham: Out at 1st; FC; runner to 2nd; A-SS PO-1B | Junior Guerra: SINGLE over 2nd; runner scores (S out at home; A-CF PO-C; batter to 2nd) | Jonathan Schoop: Strikeout; PO-C | 
+	Top of Inning 3 - Ryan Braun: Strikeout; PO-C | Christian Yelich: Out at 1st; A-2B PO-1B | Lorenzo Cain: DOUBLE to right center | Mike Moustakas: Out at 1st; runner to 3rd; A-1B PO-P | 
+	Top of Inning 4 - Orlando Arcia: 1st on error; E-SS | Jesus Aguilar: Double play; A-2B PO-SS A-SS PO-1B | Jacob Nottingham: Strikeout; PO-C | 
+	Top of Inning 5 - Junior Guerra: Fly out; PO-LF | Jonathan Schoop: Out at 1st; A-P PO-1B (X-SO; PO-C) | Ryan Braun: Foul out; PO-C | 
+	Top of Inning 6 - Christian Yelich: Strikeout; PO-C | Lorenzo Cain: Out at 1st; A-P PO-1B (X-SO; PO-C) | Mike Moustakas: Foul out; PO-C | 
+	Top of Inning 7 - Orlando Arcia: Strikeout; PO-C | Orlando Arcia: Strike (W-Base on balls) | Jesus Aguilar: Strikeout; PO-C | Jacob Nottingham: Out at 1st; A-SS PO-1B | 
+	Top of Inning 8 - Junior Guerra: Strikeout; PO-C | Jonathan Schoop: SINGLE to right | Ryan Braun: SINGLE; line drive to center; runner to 3rd (S out at 3rd; A-CF PO-3B) | Christian Yelich: 1st on error; runners advance one base; If 2 outs, runners advance 2 bases; E-LF | Lorenzo Cain: Fly out; runners hold; PO-CF | Mike Moustakas: Double play; one runner to 3rd; other out at 2nd; A-3B PO-2B A-2B PO-1B | 
+	Top of Inning 9 - Orlando Arcia: Strikeout; PO-C | Jesus Aguilar: Fly out; PO-RF | Jacob Nottingham: SINGLE to left center | Junior Guerra: Strikeout; PO-C | 
+OAKLAND ATHLETICS OUTCOMES: 
+	Bottom of Inning 1 - Mike Fiers: Fly out; PO-LF | Tyler Ladendorf: Strikeout; PO-C | Jake Smolinski: Strikeout; PO-C | 
+	Bottom of Inning 2 - Matt Joyce: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Stephen Piscotty: Hit by pitcher; batter to 1st; runner to 2nd | Khris Davis: Double play; one runner to 2nd; other out at 3rd; PO-3B A-3B PO-1B | Khris Davis: Runner out stealing 3rd; A-C PO-3B | 
+	Bottom of Inning 3 - Marcus Semien: Fly out PO-CF | Jed Lowrie: Out at 1st; A-P PO-1B (X-SO; PO-C) | Jonathan Lucroy: Strikeout; PO-C | 
+	Bottom of Inning 4 - Mike Fiers: Pop fly out; PO-SS (Y-SO; PO-C) | Tyler Ladendorf: Strikeout; PO-C | Jake Smolinski: Fly out; PO-RF | 
+	Bottom of Inning 5 - Matt Joyce: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Stephen Piscotty: Strikeout; PO-C | Khris Davis: HOMERUN over left field fence | Marcus Semien: 1st on error; E-LF | Jed Lowrie: Fly out; runner holds; PO-LF | Jonathan Lucroy: Hit by pitcher; batter to 1st; runner to 2nd | Jonathan Lucroy: Foul; strike | Mike Fiers: Fly out; runners hold; PO-RF | 
+	Bottom of Inning 6 - Tyler Ladendorf: Fly out; PO-CF | Jake Smolinski: Pop fly out; PO-2B (Y-SO; PO-C) | Matt Joyce: Fly out; PO-RF | 
+	Bottom of Inning 7 - Stephen Piscotty: Strikeout; PO-C | Khris Davis: Fly out PO-CF | Marcus Semien: 1st on error; E-LF | Jed Lowrie: Fly out; runner holds; PO-CF | 
+	Bottom of Inning 8 - Jonathan Lucroy: Out at 1st; A-1B PO-P | Mike Fiers: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Tyler Ladendorf: Double play; A-SS PO-2B A-2B PO-1B | 
+	Bottom of Inning 9 - Jake Smolinski: Out at 1st; A-SS PO-1B | Jake Smolinski: Foul (W-Base on balls) | Matt Joyce: Strikeout; PO-C | Stephen Piscotty: Strikeout; PO-C | 
+FINAL SCORE: 
+	Milwaukee Brewers: 3 Oakland Athletics: 2

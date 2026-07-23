@@ -1,0 +1,21 @@
+SAN DIEGO PADRES OUTCOMES: 
+	Top of Inning 1 - Christian Bethancourt: Strikeout; PO-C | Travis Jankowski: Pop fly out; PO-SS (Y-SO; PO-C) | Eric Hosmer: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Freddy Galvis: Strikeout; PO-C | 
+	Top of Inning 2 - Brett Wallace: Foul out; PO-C | Jose Pirela: Out at 1st; A-3B PO-1B | Manuel Margot: DOUBLE to right center | Hunter Renfroe: Base on balls; batter takes 1st | Trey Wingenter: Fly out; runners hold; PO-CF | 
+	Top of Inning 3 - Christian Bethancourt: DOUBLE to right center | Travis Jankowski: Strikeout; PO-C | Eric Hosmer: Strikeout; PO-C | Freddy Galvis: Pop fly out; PO-SS | 
+	Top of Inning 4 - Brett Wallace: Out at 1st; A-P PO-1B (X-SO; PO-C) | Jose Pirela: Fly out; PO-LF | Manuel Margot: Fly out; PO-RF | 
+	Top of Inning 5 - Hunter Renfroe: Out at 1st; A-3B PO-1B | Trey Wingenter: Out at 1st; A-P PO-1B (X-SO; PO-C) | Christian Bethancourt: Out at 1st; A-SS PO-1B | 
+	Top of Inning 6 - Travis Jankowski: Out at 1st; A-2B PO-1B | Eric Hosmer: Pop fly out; PO-2B (Y-SO; PO-C) | Freddy Galvis: Strikeout; PO-C | 
+	Top of Inning 7 - Brett Wallace: Out at 1st; A-1B PO-P | Jose Pirela: Out at 1st; A-SS PO-1B | Manuel Margot: Strikeout; PO-C | 
+	Top of Inning 8 - Hunter Renfroe: Fly out; PO-LF | Hunter Renfroe: Ball | Trey Wingenter: Strikeout; PO-C | Christian Bethancourt: Strikeout; PO-C | 
+	Top of Inning 9 - Travis Jankowski: Pop fly out PO-3B | Eric Hosmer: Pop fly out PO-3B | Freddy Galvis: Out at 1st; A-P PO-1B (X-SO; PO-C) | 
+COLORADO ROCKIES OUTCOMES: 
+	Bottom of Inning 1 - Chris Iannetta: Out at 1st; A-2B PO-1B (X-SO; PO-C) | Ryan Howard: Out at 1st; A-SS PO-1B | Gerardo Parra: Strikeout; PO-C | 
+	Bottom of Inning 2 - Carlos Gonzalez: Fly out; PO-CF | Charlie Blackmon: Out at 1st; A-2B PO-1B | Trevor Story: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | David LeMahieu: DOUBLE over 1st; runner to 3rd (F scores); If 2 outs, any runner scores | Nolan Arenado: TRIPLE to right center | Wade Davis: SINGLE thru 2nd; runner scores; (X - out at 1st; runner scores; A-2B PO-1B) | Chris Iannetta: Double play; A-2B PO-SS A-SS PO-1B | 
+	Bottom of Inning 3 - Ryan Howard: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Gerardo Parra: DOUBLE over 1st; runner to 3rd (F scores); If 2 outs, any runner scores | Carlos Gonzalez: Double play; fly out; runner out at home; other to 3rd; PO-LF A-LF PO-C | Charlie Blackmon: Fly out; runner holds; PO-CF (F scores) | 
+	Bottom of Inning 4 - Trevor Story: Out at 1st; A-1B PO-P | David LeMahieu: Pop fly out; PO-SS (Y-SO; PO-C) | Nolan Arenado: Out at 1st; A-SS PO-1B | 
+	Bottom of Inning 5 - Wade Davis: Strikeout; PO-C | Chris Iannetta: Fly out; PO-RF | Ryan Howard: SINGLE to right | Gerardo Parra: Strikeout; PO-C | 
+	Bottom of Inning 6 - Carlos Gonzalez: Fly out; PO-LF | Charlie Blackmon: Strikeout; PO-C | Trevor Story: DOUBLE to right center | David LeMahieu: Fly out; runner holds; PO-CF | 
+	Bottom of Inning 7 - Nolan Arenado: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Wade Davis: Fly out; runner holds; PO-RF | Chris Iannetta: Out at 1st; runner to 2nd; A-1B PO-P | Ryan Howard: Fly out; runner holds; PO-RF | 
+	Bottom of Inning 8 - Gerardo Parra: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Carlos Gonzalez: HOMERUN over right field fence | Charlie Blackmon: DOUBLE over 3rd | Trevor Story: Out at 1st; runner to 3rd A-3B PO-1B | David LeMahieu: Double play; fly out; runner out trying for home; PO-SS A-SS PO-C | 
+FINAL SCORE: 
+	Colorado Rockies: 4 San Diego Padres: 0

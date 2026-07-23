@@ -132,7 +132,7 @@ class Database {
             if(r.getTeam().equalsIgnoreCase("Detroit Tigers")) {
                 detroit.add(r);
             }
-            if(r.getTeam().equalsIgnoreCase("Cleveland Indians")) {
+            if(r.getTeam().equalsIgnoreCase("Cleveland Guardians")) {
                 cleveland.add(r);
             }
             if(r.getTeam().equalsIgnoreCase("Minnesota Twins")) {
@@ -208,7 +208,7 @@ class Database {
     ObservableList<Player> getYankees() {
         return newyorkY.stream().collect(Collectors.toCollection(FXCollections::observableArrayList));
     }
-    ObservableList<Player> getIndians() {
+    ObservableList<Player> getGuardians() {
         return cleveland.stream().collect(Collectors.toCollection(FXCollections::observableArrayList));
     }
     ObservableList<Player> getTigers() {

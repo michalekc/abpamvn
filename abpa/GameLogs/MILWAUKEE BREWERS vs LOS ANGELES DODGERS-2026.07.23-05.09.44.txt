@@ -1,0 +1,24 @@
+LOS ANGELES DODGERS OUTCOMES: 
+	Top of Inning 1 - Corey Seager: Foul out; PO-C | Yasiel Puig: Pop fly out PO-3B | Justin Turner: Strikeout; PO-C | 
+	Top of Inning 2 - Max Muncy: Pop fly out PO-3B | Manuel Machado: Out at 1st; A-3B PO-1B | Brian Dozier: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Yasmani Grandal: Fly out; runner holds; PO-RF | 
+	Top of Inning 3 - Yasmani Grandal: Ball | Clayton Kershaw: Pop fly out; PO-SS (Y-SO; PO-C) | Cody Bellinger: 1st on error; E-SS | Corey Seager: Out at 1st; runner to 2nd; A-1B PO-P | Yasiel Puig: Fly out; runner holds; PO-RF | 
+	Top of Inning 4 - Justin Turner: Out at 1st; A-SS PO-1B | Max Muncy: Fly out; PO-LF | Manuel Machado: Strikeout; PO-C | 
+	Top of Inning 5 - Brian Dozier: Strikeout; PO-C | Yasmani Grandal: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Clayton Kershaw: Strikeout; PO-C | Cody Bellinger: Double play; A-2B PO-SS A-SS PO-1B | 
+	Top of Inning 6 - Corey Seager: Pop fly out PO-3B | Yasiel Puig: Hit by pitcher; batter takes 1st | Justin Turner: Strikeout; PO-C | Max Muncy: Out at 1st; runner to 2nd; A-P PO-1B (Y-SO; PO-C) | 
+	Top of Inning 7 - Manuel Machado: Strike (W-Base on balls) | Brian Dozier: Batter safe at first; FC; runner out at 2nd; A-2B PO-SS | Yasmani Grandal: Strikeout; PO-C | Clayton Kershaw: High fly out; PO-SS (Y-SO; PO-C) | 
+	Top of Inning 8 - Cody Bellinger: Fly out; PO-LF | Corey Seager: Foul out; PO-C | Yasiel Puig: SINGLE to right | Justin Turner: Pop fly out; PO-3B | 
+	Top of Inning 9 - Max Muncy: Strikeout; PO-C | Manuel Machado: Fly out; PO-CF | Brian Dozier: Fly out; PO-RF | 
+	Top of Inning 10 - Yasmani Grandal: HOMERUN over right field fence | Clayton Kershaw: Out at 1st; A-3B PO-1B | Cody Bellinger: Strikeout; PO-C | Corey Seager: DOUBLE to right center | Yasiel Puig: Safe at 1st; FC; runner out at 3rd; A-2B PO-3B | 
+MILWAUKEE BREWERS OUTCOMES: 
+	Bottom of Inning 1 - Ryan Braun: Pop fly out PO-3B | Christian Yelich: Strikeout; PO-C | Lorenzo Cain: Out at 1st; A-SS PO-1B | 
+	Bottom of Inning 2 - Mike Moustakas: Out at 1st; A-2B PO-1B (X-SO; PO-C) | Orlando Arcia: Strikeout; PO-C | Jesus Aguilar: Out at 1st; A-2B PO-1B | 
+	Bottom of Inning 3 - Jacob Nottingham: Foul out; PO-C | Daniel Jennings: Out at 1st; A-SS PO-1B | Jonathan Schoop: Out at 1st; A-3B PO-1B (X-SO; PO-C) | 
+	Bottom of Inning 4 - Ryan Braun: Strikeout; PO-C | Christian Yelich: Strikeout; PO-C | Lorenzo Cain: Out at 1st; A-3B PO-1B | 
+	Bottom of Inning 5 - Mike Moustakas: Fly out; PO-RF | Mike Moustakas: Strike (W-Base on balls) | Orlando Arcia: Strikeout; PO-C | Jesus Aguilar: Out at 1st; A-P PO-1B (X-SO; PO-C) | 
+	Bottom of Inning 6 - Jesus Aguilar: Ball (W-Base on balls) | Jacob Nottingham: Strikeout; PO-C | Daniel Jennings: Strikeout; PO-C | Jonathan Schoop: Pop fly out; PO-SS (Y-SO; PO-C) | 
+	Bottom of Inning 7 - Ryan Braun: Strikeout; PO-C | Christian Yelich: DOUBLE to right center | Lorenzo Cain: Out at 1st; runner to 3rd; A-SS PO-1B | Mike Moustakas: Fly out; runner holds; PO-RF (F scores) | 
+	Bottom of Inning 8 - Orlando Arcia: Strikeout; PO-C | Jesus Aguilar: Out at 1st; A-3B PO-1B | Jesus Aguilar: Ball | Jacob Nottingham: 1st on error; E-SS | Daniel Jennings: Strikeout; PO-C | 
+	Bottom of Inning 9 - Jonathan Schoop: Strikeout; PO-C | Ryan Braun: Strikeout; PO-C | Christian Yelich: SINGLE to center | Lorenzo Cain: Strikeout; PO-C | 
+	Bottom of Inning 10 - Mike Moustakas: Pop fly out PO-3B | Orlando Arcia: Fly out; PO-RF | Jesus Aguilar: Out at 1st; A-1B PO-P | 
+FINAL SCORE: 
+	Los Angeles Dodgers: 1 Milwaukee Brewers: 0

@@ -2,8 +2,12 @@ package com.abpa;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.application.Platform;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonBar.ButtonData;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
@@ -13,6 +17,9 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -45,9 +52,13 @@ public class Game {
     private String secondBaseRunnerSpeed;
     private String thirdBaseRunnerSpeed;
 
+    private String firstBaseRunner;
+    private String secondBaseRunner;
+    private String thirdBaseRunner;
+
     private String outcomeDescription;
-    private String awayLog = "AWAY OUTCOMES: ";
-    private String homeLog = "HOME OUTCOMES: ";
+    private String awayLog;
+    private String homeLog;
 
     private boolean endedNaturally = false;
 
@@ -103,7 +114,7 @@ public class Game {
     private ImageView secondBaseDot;
     private ImageView firstBaseDot;
 
-    public void startGame(ArrayList<Player> home, ArrayList<Player> away, ImageView thirdBaseDot,
+    public Stage startGame(ArrayList<Player> home, ArrayList<Player> away, ImageView thirdBaseDot,
                           ImageView secondBaseDot, ImageView firstBaseDot, String awayPitcherGrade,
                           String homePitcherGrade, String awayPitcherRating, String homePitcherRating,
                           int awayFieldingGrade, int homeFieldingGrade, Image awayImage, Image homeImage, 
@@ -119,6 +130,9 @@ public class Game {
         this.homePitcherRating = homePitcherRating;
         this.awayFieldingGrade = awayFieldingGrade;
         this.homeFieldingGrade = homeFieldingGrade;
+
+        awayLog = away.get(0).getTeam().toUpperCase() + " OUTCOMES: ";
+        homeLog = home.get(0).getTeam().toUpperCase() + " OUTCOMES: ";
 
         addInningToAwayLog();
 
@@ -219,6 +233,7 @@ public class Game {
         gameStage.setScene(stageScene);
         gameStage.getIcons().add(apbaLogo);
         gameStage.show();
+        return gameStage;
     }
 
     private void initDice() {
@@ -23243,14 +23258,44 @@ public class Game {
             addToHomeLog();
         }
         writeLogFile();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        gameOverPopupScreen();
+    }
+
+    private void gameOverPopupScreen() {
+        String awayTeamString = away.get(0).getTeam();
+        String homeTeamString = home.get(0).getTeam();
+        String gameOverFinalScore = "Final Score: " + awayTeamString + " " + awayScore + " | " + homeTeamString + " " + homeScore;
+
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        ButtonType customExittoTeamSelect = new ButtonType("Exit To Team Select", ButtonData.OK_DONE);
+        ButtonType customExitGame = new ButtonType("Exit Game", ButtonData.OK_DONE);
+        alert.setTitle("Game Over");
+        alert.setHeaderText("Game Over");
+        alert.setContentText(gameOverFinalScore);
+        alert.getButtonTypes().setAll(customExittoTeamSelect, customExitGame);
+
+        Platform.runLater(() -> {
+            var result = alert.showAndWait();
+
+            if(result.isPresent() && result.get() == customExittoTeamSelect) {
+                gameStage.close();
+            } else {
+                System.exit(0);
+            }
+        });
     }
 
     private void addInningToAwayLog() {
-        awayLog += "Top of Inning " + Integer.toString(inning) + " - ";
+        awayLog += "\n\tTop of Inning " + Integer.toString(inning) + " - ";
     }
 
     private void addInningToHomeLog() {
-        homeLog += "Bottom of Inning " + Integer.toString(inning) + " - ";
+        homeLog += "\n\tBottom of Inning " + Integer.toString(inning) + " - ";
     }
 
     private void addToAwayLog() {
@@ -23258,7 +23303,7 @@ public class Game {
         if(current < 0) {
             current = 8;
         }
-        awayLog += away.get(current).getName() + ": " + outcomeDescription + "; ";
+        awayLog += away.get(current).getName() + ": " + outcomeDescription + " | ";
     }
 
     private void addToHomeLog() {
@@ -23266,23 +23311,32 @@ public class Game {
         if(current < 0) {
             current = 8;
         }
-        homeLog += home.get(current).getName() + ": " + outcomeDescription + "; ";
+        homeLog += home.get(current).getName() + ": " + outcomeDescription + " | ";
     }
 
     private void writeLogFile() {
-        String finalScore = "FINAL SCORE: " + away.get(playerAtBatAway).getTeam() + ": " + awayScore + " " +
-                home.get(playerAtBatHome).getTeam() + ": " + homeScore;
+        String finalScore;
+        String awayTeam = away.get(0).getTeam();
+        String homeTeam = home.get(0).getTeam();
+        if(awayScore > homeScore) {
+            finalScore = "FINAL SCORE: \n\t" + awayTeam + ": " + awayScore + " " +
+                homeTeam + ": " + homeScore;
+        } else {
+            finalScore = "FINAL SCORE: \n\t" + homeTeam + ": " + homeScore + " " +
+                awayTeam + ": " + awayScore;
+        }
         SimpleDateFormat sdfDate = new SimpleDateFormat("yyyy.MM.dd-HH.mm.ss");
         Date now = new Date();
         String strDate = sdfDate.format(now);
-        try {
-            FileOutputStream output = new FileOutputStream(System.getProperty("user.dir") + "\\Logs\\" +
-                    "Game" + strDate + ".txt");
-            output.write(awayLog.getBytes());
-            output.write(homeLog.getBytes());
-            output.write(finalScore.getBytes());
+        String path = System.getProperty("user.dir") + "\\GameLogs";
+        String fullLog = awayLog+"\n"+homeLog+"\n"+finalScore;
 
-            output.close();
+        try {
+            if(!Files.isDirectory(Paths.get(path))) {
+                Files.createDirectories(Paths.get(path));
+            }
+
+            Files.writeString(Path.of(Paths.get(path)+"\\" + homeTeam.toUpperCase() + " vs " + awayTeam.toUpperCase() + "-" + strDate + ".txt"),fullLog);
         } catch (IOException ex) {
             System.out.println(ex);
         }

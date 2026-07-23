@@ -1,0 +1,21 @@
+BOSTON RED SOX OUTCOMES: 
+	Top of Inning 1 - Sandy Leon: Pop fly out PO-3B | Dustin Pedroia: Fly out; PO-CF | Dustin Pedroia: Strike (W-Base on balls) | Mitch Moreland: Pop fly out; PO-SS (Y-SO; PO-C) | 
+	Top of Inning 2 - Xander Bogaerts: HOMERUN over right field fence | Brock Holt: SINGLE to right | Jackie Bradley-Jr.: Batter safe at first; FC; runner out at 2nd; A-2B PO-SS | Markus Betts: Fly out; runner holds; PO-RF | Julio Martinez: SINGLE; beats out infield hit; runner to 2nd | Chris Sale: Fly out; runners hold; PO-CF | 
+	Top of Inning 3 - Sandy Leon: Fly out; PO-CF | Dustin Pedroia: Out at 1st; A-SS PO-1B | Mitch Moreland: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Xander Bogaerts: Fly out; runner holds; PO-CF | 
+	Top of Inning 4 - Brock Holt: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Jackie Bradley-Jr.: Strikeout; PO-C | Markus Betts: Strikeout; PO-C | 
+	Top of Inning 5 - Markus Betts: Foul (W-Base on balls) | Julio Martinez: Fly out; PO-RF | Chris Sale: 1st on error; E-1B | Sandy Leon: Strikeout; PO-C | Dustin Pedroia: Base on balls, runner to 2nd; batter to 1st (ZZ Pitcher : ball) | Mitch Moreland: TRIPLE to right field bull pen | Xander Bogaerts: Fly out; runner scores; PO-LF | 
+	Top of Inning 6 - Brock Holt: Strikeout; PO-C | Jackie Bradley-Jr.: Strikeout; PO-C | Markus Betts: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Julio Martinez: Strikeout; PO-C | 
+	Top of Inning 7 - Chris Sale: Out at 1st; A-2B PO-1B | Sandy Leon: Out at 1st; A-2B PO-1B (X-SO; PO-C) | Dustin Pedroia: Fly out; PO-CF | 
+	Top of Inning 8 - Mitch Moreland: Strikeout; PO-C | Xander Bogaerts: Strikeout; PO-C | Brock Holt: Out at 1st; A-2B PO-1B (X-SO; PO-C) | 
+	Top of Inning 9 - Jackie Bradley-Jr.: Strikeout; PO-C | Markus Betts: Out at 1st; A-2B PO-1B | Julio Martinez: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Chris Sale: Double play; A-3B PO-2B A-2B PO-1B (W-Base on balls) | 
+NEW YORK YANKEES OUTCOMES: 
+	Bottom of Inning 1 - Chris Carter: Strikeout; PO-C | Ronald Torreyes: Out at 1st; A-3B PO-1B | Gary Sanchez: Foul out; PO-C | 
+	Bottom of Inning 2 - Aaron Judge: Strikeout; PO-C | Giancarlo Stanton: Foul out; PO-C | Brett Gardner: SINGLE to center | Neil Walker: Pop fly out; PO-3B | 
+	Bottom of Inning 3 - Mariekson Gregorious: SINGLE over short | Aroldis Chapman: Double play; A-SS PO-2B A-2B PO-1B | Chris Carter: Fly out; PO-LF | 
+	Bottom of Inning 4 - Ronald Torreyes: Fly out PO-CF | Gary Sanchez: Strikeout; PO-C | Aaron Judge: Fly out PO-CF | 
+	Bottom of Inning 5 - Giancarlo Stanton: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Brett Gardner: Base on balls, runner to 2nd; batter to 1st (ZZ Pitcher : ball) | Neil Walker: SINGLE thru short; runner advance 2 bases; (S on 1st out at 3rd; A-CF PO-3B) | Mariekson Gregorious: Double play; one runner holds 3rd; other out at 2nd; A-3B PO-2B A-2B PO-1B | Aroldis Chapman: Strikeout; PO-C | 
+	Bottom of Inning 6 - Chris Carter: Strikeout; PO-C | Ronald Torreyes: SINGLE over short | Gary Sanchez: Double play; A-3B PO-2B A-2B PO-1B (X-SO; PO-C) | 
+	Bottom of Inning 7 - Aaron Judge: HOMERUN over right field fence | Giancarlo Stanton: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Brett Gardner: SINGLE to right center; runner to 3rd; batter steals 2nd on second pitch; two strikes on batter | Neil Walker: Fly out; runners advance 1 base; PO-CF | Mariekson Gregorious: Fly out; runner holds; PO-LF (F scores) | Aroldis Chapman: Fly out; PO-LF | 
+	Bottom of Inning 8 - Chris Carter: 1st on error; E-3B | Ronald Torreyes: Double play; A-3B PO-2B A-2B PO-1B (X-SO; PO-C) | Gary Sanchez: Fly out; PO-LF | 
+FINAL SCORE: 
+	Yankees: 4 Sox: 3

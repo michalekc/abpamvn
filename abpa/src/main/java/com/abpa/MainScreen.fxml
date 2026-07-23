@@ -26,7 +26,7 @@
       <Button fx:id="yankees" layoutX="15.0" layoutY="440.0" mnemonicParsing="false" visible="false" />
       <Button fx:id="orioles" layoutX="15.0" layoutY="550.0" mnemonicParsing="false" visible="false" />
       <Button fx:id="redsox" layoutX="15.0" layoutY="660.0" mnemonicParsing="false" visible="false" />
-      <Button fx:id="indians" layoutX="135.0" layoutY="220.0" mnemonicParsing="false" visible="false" />
+      <Button fx:id="guardians" layoutX="135.0" layoutY="220.0" mnemonicParsing="false" visible="false" />
       <Button fx:id="tigers" layoutX="135.0" layoutY="330.0" mnemonicParsing="false" visible="false" />
       <Button fx:id="twins" layoutX="135.0" layoutY="440.0" mnemonicParsing="false" visible="false" />
       <Button fx:id="royals" layoutX="135.0" layoutY="550.0" mnemonicParsing="false" visible="false" />
@@ -239,5 +239,7 @@
             <MenuItem fx:id="roster2025" mnemonicParsing="false" onAction="#changeMenuButton" text="2025" />
          </items>
       </MenuButton>
+      <ImageView fx:id="homeTeamLogoFx" fitHeight="82.0" fitWidth="82.0" layoutX="51.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <ImageView fx:id="awayTeamLogoFx" fitHeight="82.0" fitWidth="82.0" layoutX="51.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true" visible="false" />
    </children>
 </Pane>

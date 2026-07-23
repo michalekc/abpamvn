@@ -1,0 +1,9 @@
+CHICAGO CUBS OUTCOMES: 
+	Top of Inning 1 - Cole Hamels: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Chris Coghlan: Pop fly out; PO-2B (Y-SO; PO-C) | Kris Bryant: DOUBLE to right center | Albert Almora: Out at 1st; runner to 3rd A-3B PO-1B | 
+	Top of Inning 2 - Jason Heyward: Out at 1st; A-2B PO-1B (X-SO; PO-C) | Ben Zobrist: Strikeout; PO-C | Anthony Rizzo: Fly out PO-CF | 
+	Top of Inning 3 - 
+MILWAUKEE BREWERS OUTCOMES: 
+	Bottom of Inning 1 - Ryan Braun: Strikeout; PO-C | Christian Yelich: Fly out PO-CF | Lorenzo Cain: Fly out PO-CF | 
+	Bottom of Inning 2 - Mike Moustakas: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Orlando Arcia: Out at 1st; runner to 2nd; A-3B PO-1B | Jesus Aguilar: DOUBLE to left center; runner scores | Jacob Nottingham: Strikeout; PO-C | Junior Guerra: Runner out stealing 3rd A-C PO-3B | 
+FINAL SCORE: 
+	Chicago Cubs: 0 Milwaukee Brewers: 1

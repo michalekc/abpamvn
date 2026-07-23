@@ -1,0 +1,22 @@
+CHICAGO CUBS OUTCOMES: 
+	Top of Inning 1 - Cole Hamels: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Chris Coghlan: Out at 1st; A-2B PO-1B (X-SO; PO-C) | Kris Bryant: Strikeout; PO-C | 
+	Top of Inning 2 - Albert Almora: Out at 1st; A-SS PO-1B | Jason Heyward: Pop fly out; PO-2B (Y-SO; PO-C) | Ben Zobrist: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Anthony Rizzo: Safe at first; FC; runner out; A-SS PO-2B | 
+	Top of Inning 3 - Javier Baez: Out at 1st; A-2B PO-1B (X-SO; PO-C) | Willson Contreras: 1st on error; E-SS | Cole Hamels: Batter safe at first; FC; runner out at 2nd; A-2B PO-SS | Chris Coghlan: Foul out; PO-C (W-Base on balls) | 
+	Top of Inning 4 - Kris Bryant: SINGLE to left center | Albert Almora: SINGLE; line drive to center; runner to 3rd (S out at 3rd; A-CF PO-3B) | Jason Heyward: SINGLE to left; one runner scores; other to 2nd (F to 3rd) | Ben Zobrist: DOUBLE to left center; runners score; (S on 1st out at home; A-LF A-SS PO-C) | Anthony Rizzo: Strikeout; PO-C | Javier Baez: HOMERUN over center field fence | Willson Contreras: Out at 1st; A-2B PO-1B | Cole Hamels: SINGLE to right | Chris Coghlan: Batter safe at first; FC; runner out at 2nd; A-2B PO-SS | 
+	Top of Inning 5 - Kris Bryant: DOUBLE over 1st | Albert Almora: Base on balls; batter takes 1st | Jason Heyward: Infield fly; PO-2B | Ben Zobrist: Base on balls; fills the bases | Anthony Rizzo: SINGLE thru short; runners advance 2 bases (S on 1st out at 3rd; A-LF PO-3B) | Javier Baez: SINGLE to left; one runner scores; other to 2nd | Willson Contreras: Infield fly; PO-2B | Cole Hamels: Double play; one runner to 2nd; other out at 3rd; PO-3B A-3B PO-1B | 
+	Top of Inning 6 - Chris Coghlan: Foul out; PO-C | Kris Bryant: Fly out; PO-LF | Albert Almora: Out at 1st; A-3B PO-1B (X-SO; PO-C) | 
+	Top of Inning 7 - Jason Heyward: Fly out; PO-RF | Ben Zobrist: SINGLE to left center | Anthony Rizzo: SINGLE; line drive to center; runner to 3rd (S out at 3rd; A-CF PO-3B) | Javier Baez: Double play; A-2B PO-SS A-SS PO-1B; runner scores, if not third out | 
+	Top of Inning 8 - Javier Baez: Ball | Javier Baez: Ball | Willson Contreras: Out at 1st; A-P PO-1B (X-SO; PO-C) | Cole Hamels: Fly out; PO-LF | Chris Coghlan: Fly out; PO-CF | 
+	Top of Inning 9 - Kris Bryant: Out at 1st; A-2B PO-1B | Albert Almora: Fly out; PO-RF | Jason Heyward: Pop fly out; PO-SS (Y-SO; PO-C) | 
+MILWAUKEE BREWERS OUTCOMES: 
+	Bottom of Inning 1 - Ryan Braun: SINGLE to left; batter steals 2nd on first pitch to next batter; one strike on batter | Christian Yelich: Base on balls; batter takes 1st | Lorenzo Cain: Out at 1st, runners advance one base; A-3B PO-1B | Mike Moustakas: Fly out; runners hold; PO-RF | Orlando Arcia: Strikeout; PO-C | 
+	Bottom of Inning 2 - Jesus Aguilar: DOUBLE over 1st | Erik Kratz: Pop fly out; PO-SS | Chase Anderson: Out at 1st; runner holds; A-3B PO-1B | Chase Anderson: Wild pitch; runner to 3rd | Jonathan Schoop: Strikeout; PO-C | 
+	Bottom of Inning 3 - Ryan Braun: Foul out; PO-C | Ryan Braun: Foul (W-Base on balls) | Christian Yelich: Strikeout; PO-C | Lorenzo Cain: DOUBLE to right center | Mike Moustakas: Out at 1st; runner holds; A-SS PO-1B | 
+	Bottom of Inning 4 - Orlando Arcia: 1st on error; E-LF | Jesus Aguilar: HOMERUN over left field fence | Erik Kratz: Out at 1st; A-3B PO-1B | Chase Anderson: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Jonathan Schoop: Pop fly out; PO-SS (Y-SO; PO-C) | 
+	Bottom of Inning 5 - Ryan Braun: Out at 1st; A-2B PO-1B | Christian Yelich: Strikeout; PO-C | Lorenzo Cain: Fly out PO-CF | 
+	Bottom of Inning 6 - Mike Moustakas: Out at 1st; A-P PO-1B (X-SO; PO-C) | Orlando Arcia: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Jesus Aguilar: Fly out; PO-RF | 
+	Bottom of Inning 7 - Jesus Aguilar: Ball (W-Base on balls) | Erik Kratz: Strikeout; PO-C | Chase Anderson: Strikeout; PO-C | Jonathan Schoop: Out at 1st; A-SS PO-1B | 
+	Bottom of Inning 8 - Ryan Braun: Out at 1st; A-SS PO-1B | Christian Yelich: HOMERUN over right field fence | Lorenzo Cain: SINGLE to left; batter steals 2nd on first pitch to next batter; one strike on batter | Mike Moustakas: Out at 1st; runner to 3rd A-3B PO-1B | Orlando Arcia: TRIPLE along left field foul line | Jesus Aguilar: Double play; fly out; runner out trying for home; PO-SS A-SS PO-C | 
+	Bottom of Inning 9 - Jesus Aguilar: Ball (W-Base on balls) | Erik Kratz: Out at 1st; A-SS PO-1B | Chase Anderson: Strikeout; PO-C | Jonathan Schoop: Out at 1st; A-2B PO-1B (X-SO; PO-C) | 
+FINAL SCORE: 
+	Chicago Cubs: 8 null: 4

@@ -1,0 +1,21 @@
+CHICAGO CUBS OUTCOMES: 
+	Top of Inning 1 - Cole Hamels: Fly out; PO-LF | Chris Coghlan: Out at 1st; A-1B PO-P | Kris Bryant: Hit by pitcher; batter takes 1st | Albert Almora: High fly out; PO-SS (Y-SO; PO-C) | 
+	Top of Inning 2 - Jason Heyward: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Ben Zobrist: Batter safe at first; FC; runner out at 2nd; A-2B PO-SS | Anthony Rizzo: HOMERUN over right center field fence | Javier Baez: Fly out; PO-CF | Willson Contreras: Strikeout; PO-C | 
+	Top of Inning 3 - Cole Hamels: Strikeout; PO-C | Chris Coghlan: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Kris Bryant: Pop fly out PO-3B | 
+	Top of Inning 4 - Albert Almora: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Jason Heyward: Out at 1st; A-P PO-1B (X-SO; PO-C) | Ben Zobrist: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Anthony Rizzo: Strikeout; PO-C | 
+	Top of Inning 5 - Javier Baez: Out at 1st; A-SS PO-1B | Willson Contreras: Out at 1st; A-2B PO-1B (X-SO; PO-C) | Cole Hamels: Pop fly out PO-3B | 
+	Top of Inning 6 - Chris Coghlan: Out at 1st; A-1B PO-P | Kris Bryant: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Albert Almora: Double play; A-3B PO-2B A-2B PO-1B (X-SO; PO-C) | 
+	Top of Inning 7 - Jason Heyward: Foul out; PO-C | Ben Zobrist: Fly out; PO-LF | Anthony Rizzo: Fly out; PO-CF | 
+	Top of Inning 8 - Javier Baez: Strikeout; PO-C | Willson Contreras: Out at 1st; A-SS PO-1B | Cole Hamels: Fly out; PO-RF | 
+	Top of Inning 9 - Chris Coghlan: Pop fly out; PO-SS (Y-SO; PO-C) | Kris Bryant: Fly out; PO-RF | Albert Almora: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Jason Heyward: Strikeout; PO-C | 
+MILWAUKEE BREWERS OUTCOMES: 
+	Bottom of Inning 1 - Ryan Braun: HOMERUN over right field fence | Christian Yelich: Fly out PO-CF | Lorenzo Cain: Out at 1st; A-SS PO-1B | Mike Moustakas: Fly out; PO-CF | 
+	Bottom of Inning 2 - Orlando Arcia: 1st on error; E-SS | Jesus Aguilar: Base on balls, runner to 2nd; batter to 1st (ZZ Pitcher : ball) | Erik Kratz: Fly out; runners hold; PO-RF | Daniel Jennings: Strikeout; PO-C | Jonathan Schoop: Fly out; runners hold; PO-CF | 
+	Bottom of Inning 3 - Ryan Braun: SINGLE over short | Christian Yelich: Double play; A-SS PO-2B A-2B PO-1B | Lorenzo Cain: Strikeout; PO-C | 
+	Bottom of Inning 4 - Mike Moustakas: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Orlando Arcia: Strikeout; PO-C | Jesus Aguilar: HOMERUN over right center field fence | Jesus Aguilar: Ball | Erik Kratz: Foul out; PO-C | Daniel Jennings: Strikeout; PO-C | 
+	Bottom of Inning 5 - Jonathan Schoop: 1st on error; E-SS | Ryan Braun: Fly out; runner holds; PO-RF | Christian Yelich: HOMERUN over left field fence | Lorenzo Cain: Fly out; PO-CF | Mike Moustakas: Strikeout; PO-C | 
+	Bottom of Inning 6 - Orlando Arcia: Foul out; PO-C | Jesus Aguilar: DOUBLE over 1st | Erik Kratz: HOMERUN over center field fence | Daniel Jennings: Strikeout; PO-C | Jonathan Schoop: Out at 1st; A-3B PO-1B | 
+	Bottom of Inning 7 - Ryan Braun: Strikeout; PO-C | Christian Yelich: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Lorenzo Cain: Pop fly out; PO-3B | Mike Moustakas: Fly out; runner holds; PO-LF | 
+	Bottom of Inning 8 - Orlando Arcia: Fly out PO-CF | Jesus Aguilar: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Erik Kratz: Strikeout; PO-C | Daniel Jennings: Strikeout; PO-C | 
+FINAL SCORE: 
+	Chicago Cubs: 2 Milwaukee Brewers: 7

@@ -1,0 +1,22 @@
+NEW YORK METS OUTCOMES: 
+	Top of Inning 1 - Ezequiel Carrera: Strikeout; PO-C | Thomas Rivera: Out at 1st; A-2B PO-1B | Travis d'Arnaud: Pop fly out; PO-SS (Y-SO; PO-C) | 
+	Top of Inning 2 - Yoenis Cespedes: Strikeout; PO-C | Austin Jackson: DOUBLE to right center | Jose Bautista: Out at 1st; runner to 3rd; A-2B PO-1B | Jose Reyes: Strikeout; PO-C | 
+	Top of Inning 3 - Kelly Johnson: Foul out; PO-C | Jacob deGrom: Fly out; PO-LF | Ezequiel Carrera: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Thomas Rivera: Out at 1st; runner to 2nd; A-P PO-1B (Y-SO; PO-C) | 
+	Top of Inning 4 - Travis d'Arnaud: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Yoenis Cespedes: Strikeout; PO-C | Austin Jackson: SINGLE; beats out infield hit; runner to 2nd | Jose Bautista: Foul out; PO-C (W-base on balls) | Jose Reyes: Fly out; 1 runner scores; others hold; PO-RF | Kelly Johnson: Out at 1st, runners advance one base; A-P PO-1B | 
+	Top of Inning 5 - Jacob deGrom: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Ezequiel Carrera: Out at 1st; runner to 2nd; A-P PO-1B (Y-SO; PO-C) | Thomas Rivera: Pop fly out; PO-SS | Travis d'Arnaud: Foul out; PO-3B (W-base on balls) | Yoenis Cespedes: DOUBLE to left center; runners score; (S on 1st out at home; A-LF A-SS PO-C) | Austin Jackson: Out at 1st; runner to 3rd; A-SS PO-1B | 
+	Top of Inning 6 - Jose Bautista: DOUBLE to right center | Jose Reyes: Out at 1st; runner holds; A-SS PO-1B | Kelly Johnson: Out at 1st; runner holds; A-SS PO-1B | Jacob deGrom: Base on balls; batter takes 1st | Ezequiel Carrera: Double play; A-3B PO-2B A-2B PO-1B; runner to 3rd (W-base on balls) | Thomas Rivera: Fly out; runners hold; PO-CF | 
+	Top of Inning 7 - Travis d'Arnaud: Strikeout; PO-C | Yoenis Cespedes: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Austin Jackson: Foul out; PO-C (W-Base on balls) | Jose Bautista: Base on balls; fills the bases | Jose Reyes: Fly out; 1 runner scores; others hold; PO-RF | Kelly Johnson: Strikeout; PO-C | 
+	Top of Inning 8 - Jacob deGrom: Strikeout; PO-C | Ezequiel Carrera: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Thomas Rivera: Double play; A-2B PO-SS A-SS PO-1B (W-Base on balls) | Travis d'Arnaud: Strikeout; PO-C | Yoenis Cespedes: Strikeout; PO-C | 
+	Top of Inning 9 - Austin Jackson: Fly out; PO-LF | Jose Bautista: Foul out; PO-C | Jose Reyes: Strikeout; PO-C | 
+MILWAUKEE BREWERS OUTCOMES: 
+	Bottom of Inning 1 - Ryan Braun: Strikeout; PO-C | Christian Yelich: Fly out PO-CF | Lorenzo Cain: Strikeout; PO-C | 
+	Bottom of Inning 2 - Mike Moustakas: DOUBLE to right center | Orlando Arcia: Line drive out; PO-2B | Jesus Aguilar: 1st and 2nd on error; runner scores; E-2B | Erik Kratz: Out at 1st; runner holds; A-3B PO-1B | Daniel Jennings: Strikeout; PO-C | 
+	Bottom of Inning 3 - Jonathan Schoop: Strikeout; PO-C | Ryan Braun: Fly out PO-CF | Christian Yelich: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Lorenzo Cain: Out at 1st; runner to 2nd; A-3B PO-1B | 
+	Bottom of Inning 4 - Mike Moustakas: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Orlando Arcia: Fly out; runner holds; PO-LF | Jesus Aguilar: Strikeout; PO-C | Jesus Aguilar: Wild pitch, runner to 2nd | Erik Kratz: Out at 1st; runner holds; A-SS PO-1B | 
+	Bottom of Inning 5 - Daniel Jennings: Strikeout; PO-C | Jonathan Schoop: Strikeout; PO-C | Ryan Braun: Fly out; PO-LF | 
+	Bottom of Inning 6 - Christian Yelich: HOMERUN over right field fence | Lorenzo Cain: HOMERUN over right field fence | Mike Moustakas: Strikeout; PO-C | Orlando Arcia: DOUBLE to right center | Jesus Aguilar: Strikeout; PO-C | Erik Kratz: Fly out; runner holds (F to 3rd); PO-RF | 
+	Bottom of Inning 7 - Erik Kratz: Ball | Daniel Jennings: 1st on error; E-CF | Daniel Jennings: Wild pitch, runner to 2nd | Jonathan Schoop: Fly out; runner holds; PO-CF | Ryan Braun: Line drive out; PO-2B | Christian Yelich: DOUBLE to left center; runner scores | Lorenzo Cain: Out at 1st; runner holds; A-SS PO-1B | 
+	Bottom of Inning 8 - Mike Moustakas: Out at 1st; A-SS PO-1B | Mike Moustakas: Strike (W-Base on balls) | Orlando Arcia: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Jesus Aguilar: Foul out; PO-C (W-Base on balls) | Erik Kratz: Strikeout; PO-C | 
+	Bottom of Inning 9 - Daniel Jennings: Fly out; PO-CF | Ryan Braun: HOMERUN over right field fence | 
+FINAL SCORE: 
+	New York Mets: 4 Milwaukee Brewers: 5
