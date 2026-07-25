@@ -1,0 +1,21 @@
+NEW YORK METS OUTCOMES: 
+	Top of Inning 1 - Ezequiel Carrera: Out at 1st; A-1B PO-P | Travis d'Arnaud: Strikeout; PO-C | Todd Frazier: Out at 1st; A-3B PO-1B (X-SO; PO-C) | 
+	Top of Inning 2 - Yoenis Cespedes: Pop fly out PO-3B | Austin Jackson: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Jose Bautista: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Jose Reyes: Out at 1st; runner to 2nd; A-1B PO-P | 
+	Top of Inning 3 - Kelly Johnson: Out at 1st; A-2B PO-1B | Jacob deGrom: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Ezequiel Carrera: Out at 1st; A-2B PO-1B | 
+	Top of Inning 4 - Travis d'Arnaud: Strikeout; PO-C | Todd Frazier: Fly out; PO-LF | Yoenis Cespedes: Pop fly out PO-3B | 
+	Top of Inning 5 - Austin Jackson: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Jose Bautista: Strikeout; PO-C | Jose Reyes: Pop fly out PO-3B | 
+	Top of Inning 6 - Kelly Johnson: Fly out; PO-CF | Jacob deGrom: Strikeout; PO-C | Ezequiel Carrera: Strikeout; PO-C | 
+	Top of Inning 7 - Travis d'Arnaud: Pop fly out PO-3B | Todd Frazier: Out at 1st; A-SS PO-1B | Yoenis Cespedes: Pop fly out PO-3B | 
+	Top of Inning 8 - Austin Jackson: Foul out; PO-C | Jose Bautista: Out at 1st; A-SS PO-1B | Jose Reyes: Strikeout; PO-C | 
+	Top of Inning 9 - Kelly Johnson: Fly out; PO-LF | Jacob deGrom: Strikeout; PO-C | Ezequiel Carrera: Out at 1st; A-2B PO-1B (X-SO; PO-C) | 
+MILWAUKEE BREWERS OUTCOMES: 
+	Bottom of Inning 1 - Ryan Braun: Fly out; PO-LF | Christian Yelich: Strikeout; PO-C | Lorenzo Cain: Fly out PO-CF | 
+	Bottom of Inning 2 - Mike Moustakas: DOUBLE to right center | Orlando Arcia: TRIPLE to deep center | Jesus Aguilar: Strikeout; PO-C | Jacob Nottingham: Strikeout; PO-C | Daniel Jennings: Fly out; runner scores; PO-RF | 
+	Bottom of Inning 3 - Jonathan Schoop: Fly out; PO-RF | Ryan Braun: DOUBLE to right center | Christian Yelich: Out at 1st; runner to 3rd A-3B PO-1B | Lorenzo Cain: Fly out; runner scores; PO-RF | 
+	Bottom of Inning 4 - Mike Moustakas: Foul out; PO-C | Orlando Arcia: Out at 1st; A-SS PO-1B | Jesus Aguilar: Fly out PO-CF | 
+	Bottom of Inning 5 - Jacob Nottingham: Strikeout; PO-C | Daniel Jennings: Fly out; PO-LF | Jonathan Schoop: Strikeout; PO-C | 
+	Bottom of Inning 6 - Ryan Braun: Strikeout; PO-C | Christian Yelich: SINGLE over short | Lorenzo Cain: Double play; A-3B PO-2B A-2B PO-1B (W-Base on balls) | 
+	Bottom of Inning 7 - Mike Moustakas: Fly out PO-CF | Orlando Arcia: SINGLE to left; batter steals 2nd on first pitch to next batter; one strike on batter | Jesus Aguilar: Fly out; runner holds; PO-CF | Jesus Aguilar: Wild pitch; runner to 3rd | Jacob Nottingham: Strikeout; PO-C | 
+	Bottom of Inning 8 - Daniel Jennings: Out at 1st; A-2B PO-1B | Jonathan Schoop: Fly out PO-CF | Ryan Braun: Out at 1st; A-2B PO-1B (X-SO; PO-C) | 
+FINAL SCORE: 
+	Milwaukee Brewers: 1 New York Mets: 0
