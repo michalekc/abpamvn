@@ -1,0 +1,22 @@
+LOS ANGELES ANGELS OUTCOMES: 
+	Top of Inning 1 - Christopher Young: Pop fly out PO-3B | Zack Cozart: Pop fly out PO-3B | Ryan Schimpf: Foul out; PO-C | 
+	Top of Inning 2 - Justin Upton: Pop fly out; PO-SS (Y-SO; PO-C) | Albert Pujols: Fly out; PO-RF | Mike Trout: Fly out; PO-LF | 
+	Top of Inning 3 - David Fletcher: DOUBLE to right center | Francisco Arcia: Out at 1st; runner to 3rd (F scores); A-SS PO-1B | Shohei Ohtani: Fly out; PO-RF | Christopher Young: Fly out; PO-CF | 
+	Top of Inning 4 - Zack Cozart: Pop fly out PO-3B | Ryan Schimpf: Pop fly out; PO-SS (Y-SO; PO-C) | Justin Upton: Fly out; PO-LF | 
+	Top of Inning 5 - Albert Pujols: DOUBLE to right center | Mike Trout: Base on balls; batter takes 1st | David Fletcher: Infield fly; PO-SS | Francisco Arcia: HOMERUN over right field fence | Shohei Ohtani: Out at 1st; A-P PO-1B (X-SO; PO-C) | Christopher Young: Out at 1st; A-2B PO-1B (X-SO; PO-C) | 
+	Top of Inning 6 - Christopher Young: Strike (W-Base on balls) | Zack Cozart: Fly out; PO-CF | Ryan Schimpf: Pop fly out; PO-2B (Y-SO; PO-C) | Justin Upton: Foul out; PO-C | 
+	Top of Inning 7 - Albert Pujols: Strikeout; PO-C | Mike Trout: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | David Fletcher: Out at 1st; runner to 2nd; A-1B PO-P | Francisco Arcia: Out at 1st; runner to 3rd A-3B PO-1B | 
+	Top of Inning 8 - Francisco Arcia: Ball | Shohei Ohtani: DOUBLE to right center | Christopher Young: Out at 1st; runner holds; A-SS PO-1B | Zack Cozart: Out at 1st; runner to 3rd; A-SS PO-1B | Ryan Schimpf: Strikeout; PO-C | 
+	Top of Inning 9 - Justin Upton: DOUBLE to right center | Albert Pujols: Fly out; runner holds; PO-CF | Mike Trout: 1st on error; runner scores; E-LF | David Fletcher: Fly out; runner holds; PO-CF | Francisco Arcia: Strikeout; PO-C | 
+LOS ANGELES DODGERS OUTCOMES: 
+	Bottom of Inning 1 - Chase Utley: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Corey Seager: Strikeout; PO-C | Yasiel Puig: TRIPLE along right field foul line | Joc Pederson: Strikeout; PO-C | Justin Turner: Double play - line drive; PO-2B A-2B PO-3B | 
+	Bottom of Inning 2 - Manuel Machado: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Yasmani Grandal: Double play; A-2B PO-SS A-SS PO-1B (W-Base on balls) | Clayton Kershaw: Fly out; PO-LF | 
+	Bottom of Inning 3 - Cody Bellinger: Strikeout; PO-C | Chase Utley: Out at 1st; A-P PO-1B (X-SO; PO-C) | Corey Seager: Strikeout; PO-C | 
+	Bottom of Inning 4 - Yasiel Puig: SINGLE over short | Joc Pederson: DOUBLE over 1st; runner to 3rd (F scores); If 2 outs, any runner scores | Justin Turner: Fly out; runners hold; PO-CF | Manuel Machado: TRIPLE to deep left | Yasmani Grandal: Foul out; PO-SS (W-base on balls) | Clayton Kershaw: Strikeout; PO-C | 
+	Bottom of Inning 5 - Cody Bellinger: Strikeout; PO-C | Chase Utley: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Corey Seager: Out at 1st; runner to 2nd; A-3B PO-1B | Yasiel Puig: Out at 1st; runner to 3rd; A-2B PO-1B | 
+	Bottom of Inning 6 - Joc Pederson: Strikeout; PO-C | Justin Turner: Strikeout; PO-C | Manuel Machado: Strikeout; PO-C | 
+	Bottom of Inning 7 - Yasmani Grandal: HOMERUN over right field fence | Clayton Kershaw: Pop fly out; PO-SS (Y-SO; PO-C) | Cody Bellinger: DOUBLE to right center | Chase Utley: Hit by pitcher; batter takes 1st | Corey Seager: Fly out; runners hold; PO-CF | Yasiel Puig: Infield fly; PO-2B | 
+	Bottom of Inning 8 - Joc Pederson: Fly out PO-CF | Justin Turner: HOMERUN over right field fence | Manuel Machado: Out at 1st; A-P PO-1B (X-SO; PO-C) | Yasmani Grandal: Out at 1st; A-2B PO-1B | 
+	Bottom of Inning 9 - Clayton Kershaw: SINGLE to right | Cody Bellinger: Base on balls, runner to 2nd; batter to 1st (ZZ Pitcher : ball) | Chase Utley: Base on balls; fills the bases | Yasiel Puig: Base on balls | 
+FINAL SCORE: 
+	Los Angeles Dodgers: 6 Los Angeles Angels: 5
