@@ -7371,8 +7371,11 @@ public class Game {
                 if(teamAtBat == 0) {
                     if(homePitcherRating.equalsIgnoreCase("W")) {
                         secondBaseRunnerSpeed = firstBaseRunnerSpeed;
+                        secondBaseRunner = firstBaseRunner;
                         firstBaseRunnerSpeed = awayCurrentSpeed();
-                        secondBaseDot.setVisible(true);
+                        firstBaseRunner = awayCurrentBatter();
+                        runnerToFirst();
+                        runnerToSecond();
                         awayNextBatter();
                     } else {
                         out++;
@@ -7381,14 +7384,19 @@ public class Game {
                             threeOuts();
                         } else {
                             firstBaseRunnerSpeed = awayCurrentSpeed();
+                            firstBaseRunner = awayCurrentBatter();
+                            runnerToFirst();
                             awayNextBatter();
                         }
                     }
                 } else {
                     if(awayPitcherRating.equalsIgnoreCase("W")) {
                         secondBaseRunnerSpeed = firstBaseRunnerSpeed;
+                        secondBaseRunner = firstBaseRunner;
                         firstBaseRunnerSpeed = homeCurrentSpeed();
-                        secondBaseDot.setVisible(true);
+                        firstBaseRunner = homeCurrentBatter();
+                        runnerToFirst();
+                        runnerToSecond();
                         homeNextBatter();
                     } else {
                         out++;
@@ -7397,6 +7405,8 @@ public class Game {
                             threeOuts();
                         } else {
                             firstBaseRunnerSpeed = homeCurrentSpeed();
+                            firstBaseRunner = homeCurrentBatter();
+                            runnerToFirst();
                             homeNextBatter();
                         }
                     }
@@ -7429,15 +7439,21 @@ public class Game {
                         ball++;
                         ballsNum.setText(Integer.toString(ball));
                         if(ball == 4) {
-                            secondBaseDot.setVisible(true);
                             secondBaseRunnerSpeed = firstBaseRunnerSpeed;
+                            secondBaseRunner = firstBaseRunner;
                             firstBaseRunnerSpeed = awayCurrentSpeed();
+                            firstBaseRunner = awayCurrentBatter();
+                            runnerToFirst();
+                            runnerToSecond();
                             awayNextBatter();
                         }
                     } else {
-                        secondBaseDot.setVisible(true);
                         secondBaseRunnerSpeed = firstBaseRunnerSpeed;
+                        secondBaseRunner = firstBaseRunner;
                         firstBaseRunnerSpeed = awayCurrentSpeed();
+                        firstBaseRunner = awayCurrentBatter();
+                        runnerToFirst();
+                        runnerToSecond();
                         awayNextBatter();
                     }
                 } else {
@@ -7445,200 +7461,206 @@ public class Game {
                         ball++;
                         ballsNum.setText(Integer.toString(ball));
                         if(ball == 4) {
-                            secondBaseDot.setVisible(true);
                             secondBaseRunnerSpeed = firstBaseRunnerSpeed;
+                            secondBaseRunner = firstBaseRunner;
                             firstBaseRunnerSpeed = homeCurrentSpeed();
+                            firstBaseRunner = homeCurrentBatter();
+                            runnerToFirst();
+                            runnerToSecond();
                             homeNextBatter();
                         }
                     } else {
-                        secondBaseDot.setVisible(true);
                         secondBaseRunnerSpeed = firstBaseRunnerSpeed;
+                        secondBaseRunner = firstBaseRunner;
                         firstBaseRunnerSpeed = homeCurrentSpeed();
+                        firstBaseRunner = homeCurrentBatter();
+                        runnerToFirst();
+                        runnerToSecond();
                         homeNextBatter();
                     }
                 }
                 break;
             case 15:
                 situationOutcome.setText("Hit by pitcher; batter to 1st; runner to 2nd");
+                secondBaseRunnerSpeed = firstBaseRunnerSpeed;
+                secondBaseRunner = firstBaseRunner;
                 if(teamAtBat == 0) {
-                    secondBaseDot.setVisible(true);
-                    secondBaseRunnerSpeed = firstBaseRunnerSpeed;
                     firstBaseRunnerSpeed = awayCurrentSpeed();
+                    firstBaseRunner = awayCurrentBatter();
                     awayNextBatter();
                 } else {
-                    secondBaseDot.setVisible(true);
-                    secondBaseRunnerSpeed = firstBaseRunnerSpeed;
                     firstBaseRunnerSpeed = homeCurrentSpeed();
+                    firstBaseRunner = homeCurrentBatter();
                     homeNextBatter();
                 }
+                runnerToFirst();
+                runnerToSecond();
                 break;
             case 16:
                 situationOutcome.setText("1st on error; runner to 2nd; E-CF; (F to 3rd); If 2 outs, and runner to 3rd");
+                if(firstBaseRunnerSpeed.equalsIgnoreCase("F") || out == 2) {
+                    thirdBaseRunnerSpeed = firstBaseRunnerSpeed;
+                    thirdBaseRunner = firstBaseRunner;
+                    runnerToThird();
+                } else {
+                    secondBaseRunnerSpeed = firstBaseRunnerSpeed;
+                    secondBaseRunner = firstBaseRunner;
+                    runnerToSecond();
+                }
                 if(teamAtBat == 0) {
-                    if(firstBaseRunnerSpeed.equalsIgnoreCase("F") || out == 2) {
-                        thirdBaseDot.setVisible(true);
-                        thirdBaseRunnerSpeed = firstBaseRunnerSpeed;
-                    } else {
-                        secondBaseDot.setVisible(true);
-                        secondBaseRunnerSpeed = firstBaseRunnerSpeed;
-                    }
                     firstBaseRunnerSpeed = awayCurrentSpeed();
+                    firstBaseRunner = awayCurrentBatter();
                     awayNextBatter();
                 } else {
-                    if(firstBaseRunnerSpeed.equalsIgnoreCase("F") || out == 2) {
-                        thirdBaseDot.setVisible(true);
-                        thirdBaseRunnerSpeed = firstBaseRunnerSpeed;
-                    } else {
-                        secondBaseDot.setVisible(true);
-                        secondBaseRunnerSpeed = firstBaseRunnerSpeed;
-                    }
                     firstBaseRunnerSpeed = homeCurrentSpeed();
+                    firstBaseRunner = homeCurrentBatter();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 17:
                 situationOutcome.setText("SINGLE to right; runner to 2nd; runner to 3rd and batter to 2nd on fumble; " +
                         "E-RF");
+                thirdBaseRunner = firstBaseRunner;
+                thirdBaseRunnerSpeed = firstBaseRunnerSpeed;
                 if(teamAtBat == 0) {
-                    thirdBaseRunnerSpeed = firstBaseRunnerSpeed;
                     secondBaseRunnerSpeed = awayCurrentSpeed();
-                    firstBaseDot.setVisible(false);
-                    secondBaseDot.setVisible(true);
-                    thirdBaseDot.setVisible(true);
+                    secondBaseRunner = awayCurrentBatter();
                     awayNextBatter();
                 } else {
-                    thirdBaseRunnerSpeed = firstBaseRunnerSpeed;
                     secondBaseRunnerSpeed = homeCurrentSpeed();
-                    firstBaseDot.setVisible(false);
-                    secondBaseDot.setVisible(true);
-                    thirdBaseDot.setVisible(true);
+                    secondBaseRunner = homeCurrentBatter();
                     homeNextBatter();
                 }
+                runnerOffFirst();
+                runnerToThird();
+                runnerToSecond();
                 break;
             case 18:
                 situationOutcome.setText("1st on error; runner to 3rd; E-SS");
+                thirdBaseRunner = firstBaseRunner;
+                thirdBaseRunnerSpeed = firstBaseRunnerSpeed;
                 if(teamAtBat == 0) {
-                    thirdBaseDot.setVisible(true);
-                    thirdBaseRunnerSpeed = firstBaseRunnerSpeed;
                     firstBaseRunnerSpeed = awayCurrentSpeed();
+                    firstBaseRunner = awayCurrentBatter();
                     awayNextBatter();
                 } else {
-                    thirdBaseDot.setVisible(true);
-                    thirdBaseRunnerSpeed = firstBaseRunnerSpeed;
                     firstBaseRunnerSpeed = homeCurrentSpeed();
+                    firstBaseRunner = homeCurrentBatter();
                     homeNextBatter();
                 }
+                runnerToFirst();
+                runnerToThird();
                 break;
             case 19:
                 situationOutcome.setText("SINGLE to left; runner to 2nd");
+                secondBaseRunner = firstBaseRunner;
+                secondBaseRunnerSpeed = firstBaseRunnerSpeed;
                 if(teamAtBat == 0) {
-                    secondBaseDot.setVisible(true);
-                    secondBaseRunnerSpeed = firstBaseRunnerSpeed;
                     firstBaseRunnerSpeed = awayCurrentSpeed();
+                    firstBaseRunner = awayCurrentBatter();
                     awayNextBatter();
                 } else {
-                    secondBaseDot.setVisible(true);
-                    secondBaseRunnerSpeed = firstBaseRunnerSpeed;
                     firstBaseRunnerSpeed = homeCurrentSpeed();
+                    firstBaseRunner = homeCurrentBatter();
                     homeNextBatter();
                 }
+                runnerToFirst();
+                runnerToSecond();
                 break;
             case 20:
                 situationOutcome.setText("1st on error; runner to 3rd; E-2B");
+                thirdBaseRunner = firstBaseRunner;
+                thirdBaseRunnerSpeed = firstBaseRunnerSpeed;
                 if(teamAtBat == 0) {
-                    thirdBaseDot.setVisible(true);
-                    thirdBaseRunnerSpeed = firstBaseRunnerSpeed;
                     firstBaseRunnerSpeed = awayCurrentSpeed();
+                    firstBaseRunner = awayCurrentBatter();
                     awayNextBatter();
                 } else {
-                    thirdBaseDot.setVisible(true);
-                    thirdBaseRunnerSpeed = firstBaseRunnerSpeed;
                     firstBaseRunnerSpeed = homeCurrentSpeed();
+                    firstBaseRunner = homeCurrentBatter();
                     homeNextBatter();
                 }
+                runnerToFirst();
+                runnerToThird();
                 break;
             case 21:
                 situationOutcome.setText("1st and 2nd on error; runner to 3rd; A-SS E-1B (F scores)");
                 if(teamAtBat == 0) {
-                    firstBaseDot.setVisible(false);
-                    secondBaseDot.setVisible(true);
                     secondBaseRunnerSpeed = awayCurrentSpeed();
+                    secondBaseRunner = awayCurrentBatter();
                     if(firstBaseRunnerSpeed.equalsIgnoreCase("F")) {
                         awayScore++;
                         awayScoreLabel.setText(Integer.toString(awayScore));
                     } else {
-                        thirdBaseDot.setVisible(true);
                         thirdBaseRunnerSpeed = firstBaseRunnerSpeed;
+                        thirdBaseRunner = firstBaseRunner;
+                        runnerToThird();
                     }
                     awayNextBatter();
                 } else {
-                    firstBaseDot.setVisible(false);
-                    secondBaseDot.setVisible(true);
-                    secondBaseRunnerSpeed = awayCurrentSpeed();
+                    secondBaseRunnerSpeed = homeCurrentSpeed();
+                    secondBaseRunner = homeCurrentBatter();
                     if(firstBaseRunnerSpeed.equalsIgnoreCase("F")) {
                         homeScore++;
                         homeScoreLabel.setText(Integer.toString(homeScore));
                     } else {
-                        thirdBaseDot.setVisible(true);
                         thirdBaseRunnerSpeed = firstBaseRunnerSpeed;
+                        thirdBaseRunner = firstBaseRunner;
+                        runnerToThird();
                     }
                     homeNextBatter();
                 }
+                runnerOffFirst();
+                runnerToSecond();
                 break;
             case 22:
                 situationOutcome.setText("Hit by pitcher; batter to 1st; runner to 2nd");
+                secondBaseRunner = firstBaseRunner;
+                secondBaseRunnerSpeed = firstBaseRunnerSpeed;
                 if(teamAtBat == 0) {
-                    secondBaseDot.setVisible(true);
-                    secondBaseRunnerSpeed = firstBaseRunnerSpeed;
                     firstBaseRunnerSpeed = awayCurrentSpeed();
+                    firstBaseRunner = awayCurrentBatter();
                     awayNextBatter();
                 } else {
-                    secondBaseDot.setVisible(true);
-                    secondBaseRunnerSpeed = firstBaseRunnerSpeed;
                     firstBaseRunnerSpeed = homeCurrentSpeed();
+                    firstBaseRunner = homeCurrentBatter();
                     homeNextBatter();
                 }
+                runnerToFirst();
+                runnerToSecond();
                 break;
             case 23:
                 situationOutcome.setText("Runner out stealing; A-C PO-2B; If 2 outs then balk runner to 2nd");
-                if(teamAtBat == 0) {
-                    if(out == 2) {
-                        firstBaseDot.setVisible(false);
-                        secondBaseDot.setVisible(true);
-                        secondBaseRunnerSpeed = firstBaseRunnerSpeed;
-                    } else {
-                        out++;
-                        outsNum.setText(Integer.toString(out));
-                    }
+                if(out == 2) {
+                    secondBaseRunnerSpeed = firstBaseRunnerSpeed;
+                    secondBaseRunner = firstBaseRunner;
+                    runnerOffFirst();
+                    runnerToSecond();
                 } else {
-                    if(out == 2) {
-                        firstBaseDot.setVisible(false);
-                        secondBaseDot.setVisible(true);
-                        secondBaseRunnerSpeed = firstBaseRunnerSpeed;
-                    } else {
-                        out++;
-                        outsNum.setText(Integer.toString(out));
-                    }
+                    out++;
+                    outsNum.setText(Integer.toString(out));
+                    runnerOffFirst();
                 }
                 break;
             case 24:
                 situationOutcome.setText("Double play; A-SS PO-2B A-2B PO-1B");
                 if(teamAtBat == 0) {
-                    firstBaseDot.setVisible(false);
                     out += 2;
                     outsNum.setText(Integer.toString(out));
                     if(out >= 3) {
                         threeOuts();
                     } else {
+                        runnerOffFirst();
                         awayNextBatter();
                     }
                 } else {
-                    firstBaseDot.setVisible(false);
                     out += 2;
                     outsNum.setText(Integer.toString(out));
                     if(out >= 3) {
                         threeOuts();
                     } else {
+                        runnerOffFirst();
                         homeNextBatter();
                     }
                 }
@@ -7646,21 +7668,21 @@ public class Game {
             case 25:
                 situationOutcome.setText("Double play; A-2B PO-SS A-SS PO-1B");
                 if(teamAtBat == 0) {
-                    firstBaseDot.setVisible(false);
                     out += 2;
                     outsNum.setText(Integer.toString(out));
                     if(out >= 3) {
                         threeOuts();
                     } else {
+                        runnerOffFirst();
                         awayNextBatter();
                     }
                 } else {
-                    firstBaseDot.setVisible(false);
                     out += 2;
                     outsNum.setText(Integer.toString(out));
                     if(out >= 3) {
                         threeOuts();
                     } else {
+                        runnerOffFirst();
                         homeNextBatter();
                     }
                 }
@@ -7674,6 +7696,8 @@ public class Game {
                         threeOuts();
                     } else {
                         firstBaseRunnerSpeed = awayCurrentSpeed();
+                        firstBaseRunner = awayCurrentBatter();
+                        runnerToFirst();
                         awayNextBatter();
                     }
                 } else {
@@ -7683,6 +7707,8 @@ public class Game {
                         threeOuts();
                     } else {
                         firstBaseRunnerSpeed = homeCurrentSpeed();
+                        firstBaseRunner = homeCurrentBatter();
+                        runnerToFirst();
                         homeNextBatter();
                     }
                 }
