@@ -1,0 +1,38 @@
+TAMPA BAY RAYS OUTCOMES: 
+	Top of Inning 1 - Thomas Pham: Ball | Michael Perez: Out at 1st; A-3B PO-1B | Alexei Ramirez: Fly out; PO-RF | Ji-Man Choi: Pop fly out; PO-2B (Y-SO; PO-C) | 
+	Top of Inning 2 - Carlos Gomez: Out at 1st; A-3B PO-1B | Kevin Kiermaier: Pop fly out; PO-SS (Y-SO; PO-C) | Joey Wendle: Out at 1st; A-SS PO-1B | 
+	Top of Inning 3 - Matt Duffy: SINGLE over short | Hunter Wood: Double play; A-SS PO-2B A-2B PO-1B | Thomas Pham: SINGLE to center | Michael Perez: DOUBLE over 1st; runner to 3rd (F scores); If 2 outs, any runner scores | Alexei Ramirez: Out at 1st; runner to 3rd A-3B PO-1B | 
+	Top of Inning 4 - Ji-Man Choi: Out at 1st; A-SS PO-1B | Carlos Gomez: Fly out PO-CF | Kevin Kiermaier: Fly out PO-CF | 
+	Top of Inning 5 - Joey Wendle: SINGLE over short | Matt Duffy: Double play; A-SS PO-2B A-2B PO-1B | Hunter Wood: Strikeout; PO-C | 
+	Top of Inning 6 - Thomas Pham: Fly out PO-CF | Michael Perez: Strikeout; PO-C | Alexei Ramirez: Out at 1st; A-3B PO-1B (X-SO; PO-C) | 
+	Top of Inning 7 - Ji-Man Choi: Out at 1st; A-P PO-1B (X-SO; PO-C) | Carlos Gomez: Foul out; PO-C | Kevin Kiermaier: Out at 1st; A-3B PO-1B (X-SO; PO-C) | 
+	Top of Inning 8 - Joey Wendle: Strikeout; PO-C | Matt Duffy: Out at 1st; A-1B PO-P | Hunter Wood: Strikeout; PO-C | 
+	Top of Inning 9 - Thomas Pham: Out at 1st; A-3B PO-1B | Michael Perez: Out at 1st; A-3B PO-1B | Alexei Ramirez: Pop fly out; PO-2B (Y-SO; PO-C) | 
+	Top of Inning 10 - Ji-Man Choi: Fly out; PO-CF | Carlos Gomez: Strikeout; PO-C | Kevin Kiermaier: Fly out; PO-CF | 
+	Top of Inning 11 - Joey Wendle: Out at 1st; A-P PO-1B (X-SO; PO-C) | Matt Duffy: 1st on error; E-1B | Hunter Wood: Foul out; PO-C (W-Base on balls) | Thomas Pham: Strikeout; PO-C | 
+	Top of Inning 12 - Michael Perez: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Alexei Ramirez: High fly out; PO-3B | Ji-Man Choi: Strikeout; PO-C | Carlos Gomez: Double play; A-SS PO-2B A-2B PO-1B | 
+	Top of Inning 13 - Kevin Kiermaier: Fly out; PO-RF | Joey Wendle: Pop fly out; PO-2B (Y-SO; PO-C) | Matt Duffy: Pop fly out; PO-2B (Y-SO; PO-C) | 
+	Top of Inning 14 - Hunter Wood: Out at 1st; A-3B PO-1B | Thomas Pham: Fly out; PO-RF | Michael Perez: SINGLE to right | Alexei Ramirez: Fly out; runner holds; PO-RF | 
+	Top of Inning 15 - Ji-Man Choi: Out at 1st; A-3B PO-1B | Carlos Gomez: Out at 1st; A-SS PO-1B | Kevin Kiermaier: Out at 1st; A-SS PO-1B | 
+	Top of Inning 16 - Joey Wendle: Fly out PO-CF | Matt Duffy: SINGLE over short | Hunter Wood: Strikeout; PO-C | Thomas Pham: SINGLE to right center; runner to 3rd; batter steals 2nd on second pitch; two strikes on batter | Michael Perez: Fly out; runners advance 1 base; PO-RF | 
+	Top of Inning 17 - Michael Perez: Strike (W-Base on balls) | Alexei Ramirez: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Ji-Man Choi: DOUBLE over 1st; runner to 3rd (F scores); If 2 outs, any runner scores | Carlos Gomez: Strikeout; PO-C | Kevin Kiermaier: Base on balls; batter takes 1st | Joey Wendle: Strikeout; PO-C | Matt Duffy: SINGLE to left; one scores(S out at home at home & batter to 2nd; A_LF PO-C); other to 3rd | Hunter Wood: Strikeout; PO-C | 
+PHILADELPHIA PHILLIES OUTCOMES: 
+	Bottom of Inning 1 - Ryan Goins: Strikeout; PO-C | Andrew Knapp: Foul out; PO-C | Aaron Altherr: Strikeout; PO-C | 
+	Bottom of Inning 2 - David Herrera: Fly out; PO-CF | Carlos Santana: Strikeout; PO-C | Asdrubal Cabrera: HOMERUN over right field fence | Jacob Arrieta: Strikeout; PO-C | 
+	Bottom of Inning 3 - Justin Bour: 1st on error; E-2B | Trevor Plouffe: Out at 1st; FC; runner to 2nd; A-SS PO-1B | Ryan Goins: Out at 1st; runner to 3rd; A-SS PO-1B | Andrew Knapp: Pop fly out; PO-1B | 
+	Bottom of Inning 4 - Aaron Altherr: Out at 1st; A-2B PO-1B | David Herrera: Strikeout; PO-C | Carlos Santana: 1st on error; E-2B | Asdrubal Cabrera: Fly out; runner holds; PO-RF | 
+	Bottom of Inning 5 - Jacob Arrieta: Out at 1st; A-3B PO-1B | Justin Bour: Fly out; PO-LF | Trevor Plouffe: Out at 1st; A-SS PO-1B | 
+	Bottom of Inning 6 - Ryan Goins: Pop fly out PO-3B | Andrew Knapp: Strikeout; PO-C | Aaron Altherr: Strikeout; PO-C | 
+	Bottom of Inning 7 - David Herrera: Out at 1st; A-2B PO-1B (X-SO; PO-C) | Carlos Santana: DOUBLE to right center | Asdrubal Cabrera: Line drive out; PO-2B | Jacob Arrieta: Out at 1st; runner to 3rd; A-SS PO-1B | 
+	Bottom of Inning 8 - Justin Bour: Strikeout; PO-C | Trevor Plouffe: Fly out; PO-CF | Ryan Goins: Pop fly out PO-3B | 
+	Bottom of Inning 9 - Andrew Knapp: Out at 1st; A-SS PO-1B | Aaron Altherr: Strikeout; PO-C | David Herrera: DOUBLE to right center | Carlos Santana: Out at 1st; runner to 3rd A-3B PO-1B | 
+	Bottom of Inning 10 - Asdrubal Cabrera: Strikeout; PO-C | Jacob Arrieta: Pop fly out PO-3B | Justin Bour: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Trevor Plouffe: Out at 1st; runner to 2nd; A-1B PO-P | 
+	Bottom of Inning 11 - Ryan Goins: Strikeout; PO-C | Andrew Knapp: Strikeout; PO-C | Aaron Altherr: Out at 1st; A-2B PO-1B | 
+	Bottom of Inning 12 - David Herrera: Foul out; PO-C | Carlos Santana: Out at 1st; A-SS PO-1B | Asdrubal Cabrera: SINGLE to right | Jacob Arrieta: Strikeout; PO-C | 
+	Bottom of Inning 13 - Justin Bour: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Trevor Plouffe: Pop fly out PO-3B | Ryan Goins: Out at 1st; A-3B PO-1B (X-SO; PO-C) | 
+	Bottom of Inning 14 - Andrew Knapp: Strikeout; PO-C | Aaron Altherr: Strikeout; PO-C | David Herrera: Fly out; PO-CF | 
+	Bottom of Inning 15 - Carlos Santana: Foul out; PO-C | Asdrubal Cabrera: DOUBLE to right center | Jacob Arrieta: Strikeout; PO-C | Justin Bour: Base on balls; batter takes 1st | Trevor Plouffe: Batter safe at 1st; one runner out at 2nd; other safe at 3rd; A-SS PO-2B; FC | 
+	Bottom of Inning 16 - Ryan Goins: Fly out; PO-LF | Andrew Knapp: Fly out; PO-RF | Aaron Altherr: Strikeout; PO-C | 
+	Bottom of Inning 17 - David Herrera: HOMERUN over right field fence | Carlos Santana: SINGLE to left; batter steals 2nd on first pitch to next batter; one strike on batter | Asdrubal Cabrera: Out at 1st; runner to 3rd; A-SS PO-1B | Jacob Arrieta: Strikeout; PO-C | Justin Bour: Fly out; runner scores; PO-LF (S out at home; DP; A-LF PO-C) | 
+FINAL SCORE: 
+	Tampa Bay Rays: 3 Philadelphia Phillies: 2
