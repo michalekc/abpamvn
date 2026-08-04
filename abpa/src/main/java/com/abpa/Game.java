@@ -14046,6 +14046,7 @@ public class Game {
                 } else {
                     runnerOffFirst();
                     setRunnerFirstToSecond();
+                    runnerToSecond();
                     if (teamAtBat == AWAY_IND) {
                         awayNextBatter();
                     } else {
@@ -14453,7 +14454,7 @@ public class Game {
                             awayNextBatter();
                         }
                     } else {
-                        setRunnerFirstToThird();
+                        setRunnerSecondToThird();
                         setRunnerFirstToSecond();
                         runnerToThird();
                         runnerToSecond();
@@ -14475,7 +14476,7 @@ public class Game {
                             homeNextBatter();
                         }
                     } else {
-                        setRunnerFirstToThird();
+                        setRunnerSecondToThird();
                         setRunnerFirstToSecond();
                         runnerToThird();
                         runnerToSecond();
@@ -14825,6 +14826,7 @@ public class Game {
                 situationOutcome.setText("Double play; one runner out at 3rd; other to 2nd; PO-3B A-3B PO-1B");
                 runnerOffFirst();
                 setRunnerFirstToSecond();
+                runnerToSecond();
                 out += 2;
                 outsNum.setText(Integer.toString(out));
                 if(out >= 3) {
@@ -15567,11 +15569,14 @@ public class Game {
                             threeOuts();
                         } else {
                             setFirstBaseAway();
+                            runnerToFirst();
                             awayNextBatter();
                         }
                     } else {
                         setRunnerFirstToThird();
+                        runnerToThird();
                         setFirstBaseAway();
+                        runnerToFirst();
                         awayNextBatter();
                     }
                 } else {
@@ -15585,11 +15590,14 @@ public class Game {
                             threeOuts();
                         } else {
                             setFirstBaseHome();
+                            runnerToFirst();
                             homeNextBatter();
                         }
                     } else {
                         setRunnerFirstToThird();
+                        runnerToThird();
                         setFirstBaseHome();
+                        runnerToFirst();
                         homeNextBatter();
                     }
                 }
@@ -15805,11 +15813,14 @@ public class Game {
                             threeOuts();
                         } else {
                             setFirstBaseAway();
+                            runnerToFirst();
                             awayNextBatter();
                         }
                     } else {
                         setRunnerFirstToThird();
+                        runnerToThird();
                         setFirstBaseAway();
+                        runnerToFirst();
                         awayNextBatter();
                     }
                 } else {
@@ -15823,11 +15834,14 @@ public class Game {
                             threeOuts();
                         } else {
                             setFirstBaseHome();
+                            runnerToFirst();
                             homeNextBatter();
                         }
                     } else {
                         setRunnerFirstToThird();
+                        runnerToThird();
                         setFirstBaseHome();
+                        runnerToFirst();
                         homeNextBatter();
                     }
                 }
@@ -16016,11 +16030,14 @@ public class Game {
                             threeOuts();
                         } else {
                             setFirstBaseAway();
+                            runnerToFirst();
                             awayNextBatter();
                         }
                     } else {
                         setRunnerFirstToThird();
+                        runnerToThird();
                         setFirstBaseAway();
+                        runnerToFirst();
                         awayNextBatter();
                     }
                 } else {
@@ -16034,11 +16051,14 @@ public class Game {
                             threeOuts();
                         } else {
                             setFirstBaseHome();
+                            runnerToFirst();
                             homeNextBatter();
                         }
                     } else {
                         setRunnerFirstToThird();
+                        runnerToThird();
                         setFirstBaseHome();
+                        runnerToFirst();
                         homeNextBatter();
                     }
                 }
@@ -16246,11 +16266,14 @@ public class Game {
                             threeOuts();
                         } else {
                             setFirstBaseAway();
+                            runnerToFirst();
                             awayNextBatter();
                         }
                     } else {
                         setRunnerFirstToThird();
+                        runnerToThird();
                         setFirstBaseAway();
+                        runnerToFirst();
                         awayNextBatter();
                     }
                 } else {
@@ -16264,11 +16287,14 @@ public class Game {
                             threeOuts();
                         } else {
                             setFirstBaseHome();
+                            runnerToFirst();
                             homeNextBatter();
                         }
                     } else {
                         setRunnerFirstToThird();
+                        runnerToThird();
                         setFirstBaseHome();
+                        runnerToFirst();
                         homeNextBatter();
                     }
                 }
@@ -16286,11 +16312,14 @@ public class Game {
                             threeOuts();
                         } else {
                             setFirstBaseAway();
+                            runnerToFirst();
                             awayNextBatter();
                         }
                     } else {
                         setRunnerFirstToThird();
+                        runnerToThird();
                         setFirstBaseAway();
+                        runnerToFirst();
                         awayNextBatter();
                     }
                 } else {
@@ -16304,11 +16333,14 @@ public class Game {
                             threeOuts();
                         } else {
                             setFirstBaseHome();
+                            runnerToFirst();
                             homeNextBatter();
                         }
                     } else {
                         setRunnerFirstToThird();
+                        runnerToThird();
                         setFirstBaseHome();
+                        runnerToFirst();
                         homeNextBatter();
                     }
                 }
@@ -16529,6 +16561,7 @@ public class Game {
             case 19:
                 situationOutcome.setText("1st on error; one scores; other to 3rd; E-3B");
                 setRunnerFirstToThird();
+                runnerToThird();
                 if(teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -16540,6 +16573,7 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 20:
                 situationOutcome.setText("SINGLE thru 2nd; one runner scores; other out at 3rd; batter to 2nd on throw;" +
@@ -17048,6 +17082,7 @@ public class Game {
             case 19:
                 situationOutcome.setText("1st on error; one scores; other to 3rd; E-3B");
                 setRunnerFirstToThird();
+                runnerToThird();
                 if(teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -17059,6 +17094,7 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 20:
                 situationOutcome.setText("1st on error; one runner scores; other out at 3rd; batter to 2nd on throw;" +
@@ -17517,6 +17553,7 @@ public class Game {
                         " E-LF");
                 if(out == 2) {
                     setRunnerFirstToThird();
+                    runnerToThird();
                     if(teamAtBat == AWAY_IND) {
                         setFirstBaseAway();
                         awayScore++;
@@ -17528,7 +17565,6 @@ public class Game {
                         updateHomeScore();
                         homeNextBatter();
                     }
-                    runnerToThird();
                 } else {
                     runnerOffThird();
                     setRunnerFirstToSecond();
@@ -17604,6 +17640,7 @@ public class Game {
             case 19:
                 situationOutcome.setText("1st on error; one scores; other to 3rd; E-3B");
                 setRunnerFirstToThird();
+                runnerToThird();
                 if(teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -17615,6 +17652,7 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 20:
                 situationOutcome.setText("SINGLE thru 2nd; one runner scores; other out at 3rd; batter to 2nd on throw;" +
@@ -18365,6 +18403,7 @@ public class Game {
                 situationOutcome.setText("Fly out; runners advance 1 base; PO-CF");
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -18385,6 +18424,7 @@ public class Game {
                 situationOutcome.setText("Fly out; runners advance 1 base; PO-RF");
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -18640,6 +18680,7 @@ public class Game {
                 situationOutcome.setText("Fly out; runners advance 1 base; PO-RF");
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -18660,6 +18701,7 @@ public class Game {
                 situationOutcome.setText("Fly out; runners advance 1 base; PO-CF");
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -18976,6 +19018,7 @@ public class Game {
                 situationOutcome.setText("Double play; fly out; runner out at home; other to 3rd; PO-LF A-LF PO-C");
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 out += 2;
                 outsNum.setText(Integer.toString(out));
                 if(out >= 3) {
@@ -19052,6 +19095,7 @@ public class Game {
                         "the catch");
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -19193,6 +19237,7 @@ public class Game {
                         "to 3rd; PO-2B A-2B PO-C");
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 out += 2;
                 outsNum.setText(Integer.toString(out));
                 if(out >= 3) {
@@ -19392,6 +19437,7 @@ public class Game {
                 situationOutcome.setText("Passed ball; runners advance 1 base");
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 if(teamAtBat == AWAY_IND) {
                     awayScore++;
                     updateAwayScore();
@@ -19424,6 +19470,7 @@ public class Game {
                         "runners advance 1 base");
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -19444,6 +19491,7 @@ public class Game {
                 situationOutcome.setText("Pop fly out; runners advance 1 base; PO-SS");
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -19465,6 +19513,7 @@ public class Game {
                         "A-RF PO-C DP)");
                 if(thirdBaseRunnerSpeed.equalsIgnoreCase("S")) {
                     setRunnerSecondToThird();
+                    runnerToThird();
                     runnerOffSecond();
                     out += 2;
                     outsNum.setText(Integer.toString(out));
@@ -19479,6 +19528,7 @@ public class Game {
                     }
                 } else {
                     setRunnerSecondToThird();
+                    runnerToThird();
                     runnerOffSecond();
                     out++;
                     outsNum.setText(Integer.toString(out));
@@ -19501,6 +19551,7 @@ public class Game {
                 situationOutcome.setText("Balk; runners advance one base");
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 if(teamAtBat == AWAY_IND) {
                     awayScore++;
                     updateAwayScore();
@@ -19857,7 +19908,7 @@ public class Game {
                 }
                 break;
             case 32:
-                situationOutcome.setText("Fly out; runners on 3rd scores; other holds; PO-RF (F on 2nd goes to 3rd)");
+                situationOutcome.setText("Fly out; runner on 3rd scores; other holds; PO-RF (F on 2nd goes to 3rd)");
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -19866,6 +19917,7 @@ public class Game {
                     if(secondBaseRunnerSpeed.equalsIgnoreCase("F")) {
                         runnerOffSecond();
                         setRunnerSecondToThird();
+                        runnerToThird();
                     } else {
                         runnerOffThird();
                     }
@@ -19944,6 +19996,7 @@ public class Game {
                 situationOutcome.setText("Passed ball; runners advance 1 base");
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 if(teamAtBat == AWAY_IND) {
                     awayScore++;
                     updateAwayScore();
@@ -19976,6 +20029,7 @@ public class Game {
                         "runners advance 1 base");
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -19996,6 +20050,7 @@ public class Game {
                 situationOutcome.setText("Pop fly out; runners advance 1 base; PO-SS");
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -20033,6 +20088,7 @@ public class Game {
                 situationOutcome.setText("Balk; runners advance one base");
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 if(teamAtBat == AWAY_IND) {
                     awayScore++;
                     updateAwayScore();
@@ -20477,6 +20533,7 @@ public class Game {
                 situationOutcome.setText("Passed ball; runners advance 1 base");
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 if(teamAtBat == AWAY_IND) {
                     awayScore++;
                     updateAwayScore();
@@ -20508,6 +20565,7 @@ public class Game {
                         "runners advance 1 base");
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -20528,6 +20586,7 @@ public class Game {
                 situationOutcome.setText("Pop fly out; runners advance 1 base; PO-SS");
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -20564,6 +20623,7 @@ public class Game {
                 situationOutcome.setText("Balk; runners advance one base");
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 if(teamAtBat == AWAY_IND) {
                     awayScore++;
                     updateAwayScore();
@@ -20734,6 +20794,7 @@ public class Game {
                 situationOutcome.setText("SINGLE over 2nd; runners advance 2 bases");
                 runnerOffSecond();
                 setRunnerFirstToThird();
+                runnerToThird();
                 if(teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore += 2;
@@ -20745,6 +20806,7 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 8:
                 situationOutcome.setText("Fly out; 1 runner scores; others hold; PO-RF");
@@ -20977,6 +21039,7 @@ public class Game {
                 situationOutcome.setText("SINGLE over 2nd; runners advance 2 bases");
                 runnerOffSecond();
                 setRunnerFirstToThird();
+                runnerToThird();
                 if(teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore += 2;
@@ -20988,6 +21051,7 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 8:
                 situationOutcome.setText("Fly out; 1 runner scores; others hold; PO-RF");
@@ -21013,6 +21077,7 @@ public class Game {
                 if(out == 2) {
                     runnerOffSecond();
                     setRunnerFirstToThird();
+                    runnerToThird();
                     if(teamAtBat == AWAY_IND) {
                         setFirstBaseAway();
                         awayScore += 2;
@@ -21027,6 +21092,8 @@ public class Game {
                 } else {
                     setRunnerSecondToThird();
                     setRunnerFirstToSecond();
+                    runnerToThird();
+                    runnerToSecond();
                     if (teamAtBat == AWAY_IND) {
                         setFirstBaseAway();
                         awayScore++;
@@ -21039,6 +21106,7 @@ public class Game {
                         homeNextBatter();
                     }
                 }
+                runnerToFirst();
                 break;
             case 10:
                 situationOutcome.setText("SINGLE over 3rd; runners advance 2 bases; batter steals 2nd on next pitch" +
@@ -21234,6 +21302,7 @@ public class Game {
                 situationOutcome.setText("SINGLE over 2nd; runners advance 2 bases");
                 runnerOffSecond();
                 setRunnerFirstToThird();
+                runnerToThird();
                 if(teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore += 2;
@@ -21245,6 +21314,7 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 8:
                 situationOutcome.setText("SINGLE thru short; runners advance 2 bases (S on 1st out at 3rd; A-LF PO-3B)");
@@ -21260,6 +21330,7 @@ public class Game {
                         homeScore += 2;
                         updateHomeScore();
                     }
+                    runnerToFirst();
                     out++;
                     outsNum.setText(Integer.toString(out));
                     if(out == 3) {
@@ -21273,6 +21344,7 @@ public class Game {
                     }
                 } else {
                     setRunnerFirstToThird();
+                    runnerToThird();
                     if(teamAtBat == AWAY_IND) {
                         setFirstBaseAway();
                         awayScore += 2;
@@ -21284,6 +21356,7 @@ public class Game {
                         updateHomeScore();
                         homeNextBatter();
                     }
+                    runnerToFirst();
                 }
                 break;
             case 9:
@@ -21499,6 +21572,7 @@ public class Game {
                 situationOutcome.setText("SINGLE over 2nd; runners advance 2 bases");
                 runnerOffSecond();
                 setRunnerFirstToThird();
+                runnerToThird();
                 if(teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore += 2;
@@ -21510,6 +21584,7 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 8:
                 situationOutcome.setText("SINGLE thru short; runners advance 2 bases (S on 1st out at 3rd; A-LF PO-3B)");
@@ -21525,6 +21600,7 @@ public class Game {
                         homeScore += 2;
                         updateHomeScore();
                     }
+                    runnerToFirst();
                     out++;
                     outsNum.setText(Integer.toString(out));
                     if(out == 3) {
@@ -21538,6 +21614,7 @@ public class Game {
                     }
                 } else {
                     setRunnerFirstToThird();
+                    runnerToThird();
                     if(teamAtBat == AWAY_IND) {
                         setFirstBaseAway();
                         awayScore += 2;
@@ -21549,6 +21626,7 @@ public class Game {
                         updateHomeScore();
                         homeNextBatter();
                     }
+                    runnerToFirst();
                 }
                 break;
             case 9:
@@ -21556,6 +21634,7 @@ public class Game {
                 if(out == 2) {
                     runnerOffSecond();
                     setRunnerFirstToThird();
+                    runnerToThird();
                     if(teamAtBat == AWAY_IND) {
                         setFirstBaseAway();
                         awayScore += 2;
@@ -21570,6 +21649,8 @@ public class Game {
                 } else {
                     setRunnerSecondToThird();
                     setRunnerFirstToSecond();
+                    runnerToThird();
+                    runnerToSecond();
                     if (teamAtBat == AWAY_IND) {
                         setFirstBaseAway();
                         awayScore++;
@@ -21582,6 +21663,7 @@ public class Game {
                         homeNextBatter();
                     }
                 }
+                runnerToFirst();
                 break;
             case 10:
                 situationOutcome.setText("SINGLE over 3rd; runners advance 2 bases; batter steals 2nd on next pitch" +
@@ -21636,6 +21718,8 @@ public class Game {
                 runnerOffFirst();
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 out += 2;
                 outsNum.setText(Integer.toString(out));
                 if(out >= 3) {
@@ -21666,6 +21750,8 @@ public class Game {
                 situationOutcome.setText("Base on balls");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if(teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -21677,10 +21763,12 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 15:
                 situationOutcome.setText("SINGLE to left; runners advance 2 bases (S on 2nd out at home; A-LF PO-C)");
                 setRunnerFirstToThird();
+                runnerToThird();
                 runnerOffSecond();
                 if(secondBaseRunnerSpeed.equalsIgnoreCase("S")) {
                     out++;
@@ -21702,6 +21790,7 @@ public class Game {
                             setFirstBaseHome();
                             homeNextBatter();
                         }
+                        runnerToFirst();
                     }
                 } else {
                     if (teamAtBat == AWAY_IND) {
@@ -21715,12 +21804,14 @@ public class Game {
                         updateHomeScore();
                         homeNextBatter();
                     }
+                    runnerToFirst();
                 }
                 break;
             case 16:
                 situationOutcome.setText("SINGLE to center; runners advance 2 bases; batter out trying for second;" +
                         " A-CF A-1B PO-2B");
                 setRunnerFirstToThird();
+                runnerToThird();
                 runnerOffFirst();
                 runnerOffSecond();
                 out++;
@@ -21747,6 +21838,7 @@ public class Game {
                 if(out == 2) {
                     runnerOffSecond();
                     setRunnerFirstToThird();
+                    runnerToThird();
                     if (teamAtBat == AWAY_IND) {
                         setFirstBaseAway();
                         awayScore += 2;
@@ -21758,9 +21850,12 @@ public class Game {
                         updateHomeScore();
                         homeNextBatter();
                     }
+                    runnerToFirst();
                 } else {
                     setRunnerSecondToThird();
                     setRunnerFirstToSecond();
+                    runnerToThird();
+                    runnerToSecond();
                     if (teamAtBat == AWAY_IND) {
                         setFirstBaseAway();
                         awayScore++;
@@ -21772,12 +21867,14 @@ public class Game {
                         updateHomeScore();
                         homeNextBatter();
                     }
+                    runnerToFirst();
                 }
                 break;
             case 18:
                 situationOutcome.setText("1st on error; runners advance 2 bases; E-SS");
                 runnerOffSecond();
                 setRunnerFirstToThird();
+                runnerToThird();
                 if (teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore += 2;
@@ -21789,6 +21886,7 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 19:
                 situationOutcome.setText("Out at 1st; runners advance 1 base; A-3B PO-1B");
@@ -21799,6 +21897,8 @@ public class Game {
                 } else {
                     setRunnerSecondToThird();
                     setRunnerFirstToSecond();
+                    runnerToThird();
+                    runnerToSecond();
                     runnerOffFirst();
                     if (teamAtBat == AWAY_IND) {
                         awayScore++;
@@ -21815,6 +21915,8 @@ public class Game {
                 situationOutcome.setText("Hit by pitcher; runners advance 1 base");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if (teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -21826,11 +21928,14 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 21:
                 situationOutcome.setText("1st on error-fumbled grounder; runners advance 1 base; E-1B");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if (teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -21842,6 +21947,7 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 22:
                 situationOutcome.setText("Catcher picks runner off 1st; A-C PO-1B");
@@ -21861,6 +21967,8 @@ public class Game {
                 } else {
                     setRunnerSecondToThird();
                     setRunnerFirstToSecond();
+                    runnerToThird();
+                    runnerToSecond();
                     runnerOffFirst();
                     if (teamAtBat == AWAY_IND) {
                         awayScore++;
@@ -21878,6 +21986,8 @@ public class Game {
                 runnerOffFirst();
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 out += 2;
                 outsNum.setText(Integer.toString(out));
                 if(out >= 3) {
@@ -21895,6 +22005,8 @@ public class Game {
                 runnerOffFirst();
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 out += 2;
                 outsNum.setText(Integer.toString(out));
                 if(out >= 3) {
@@ -21911,6 +22023,8 @@ public class Game {
                 situationOutcome.setText("Safe at 1st; FC; runner out at home; A-2B PO-C");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -21924,12 +22038,15 @@ public class Game {
                         homeNextBatter();
                     }
                 }
+                runnerToFirst();
                 break;
             case 27:
                 situationOutcome.setText("Double play; runner out at home; batter out at 1st; A-3B PO-C A-C PO-1B");
                 runnerOffFirst();
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 out += 2;
                 outsNum.setText(Integer.toString(out));
                 if(out >= 3) {
@@ -21946,6 +22063,8 @@ public class Game {
                 situationOutcome.setText("SINGLE to short; runners advance 1 base");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if (teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -21957,12 +22076,15 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 29:
                 situationOutcome.setText("Batter safe at 1st; FC; runner force out at home; others advance 1 base; " +
                         "A-P PO-C");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -21975,6 +22097,7 @@ public class Game {
                         setFirstBaseHome();
                         homeNextBatter();
                     }
+                    runnerToFirst();
                 }
                 break;
             case 30:
@@ -22014,6 +22137,7 @@ public class Game {
                 } else {
                     runnerOffSecond();
                     setRunnerSecondToThird();
+                    runnerToThird();
                     if (teamAtBat == AWAY_IND) {
                         awayScore++;
                         updateAwayScore();
@@ -22059,7 +22183,10 @@ public class Game {
                     if(homePitcherRating.equalsIgnoreCase("W")) {
                         setRunnerSecondToThird();
                         setRunnerFirstToSecond();
+                        runnerToThird();
+                        runnerToSecond();
                         setFirstBaseAway();
+                        runnerToFirst();
                         awayScore++;
                         updateAwayScore();
                         awayNextBatter();
@@ -22076,7 +22203,10 @@ public class Game {
                     if(awayPitcherRating.equalsIgnoreCase("W")) {
                         setRunnerSecondToThird();
                         setRunnerFirstToSecond();
+                        runnerToThird();
+                        runnerToSecond();
                         setFirstBaseHome();
+                        runnerToFirst();
                         homeScore++;
                         updateHomeScore();
                         homeNextBatter();
@@ -22096,6 +22226,8 @@ public class Game {
                 runnerOffFirst();
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if(teamAtBat == AWAY_IND) {
                     awayScore++;
                     updateAwayScore();
@@ -22114,6 +22246,8 @@ public class Game {
                     runnerOffFirst();
                     setRunnerSecondToThird();
                     setRunnerFirstToSecond();
+                    runnerToThird();
+                    runnerToSecond();
                     if (teamAtBat == AWAY_IND) {
                         awayScore++;
                         updateAwayScore();
@@ -22130,6 +22264,8 @@ public class Game {
                         " advance 1 base; If 2 outs, SINGLE; runners advance 1 base");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if(out == 2) {
                     if (teamAtBat == AWAY_IND) {
                         setFirstBaseAway();
@@ -22142,6 +22278,7 @@ public class Game {
                         updateHomeScore();
                         homeNextBatter();
                     }
+                    runnerToFirst();
                 } else {
                     runnerOffFirst();
                     out++;
@@ -22166,6 +22303,8 @@ public class Game {
                 runnerOffFirst();
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -22181,6 +22320,8 @@ public class Game {
                 situationOutcome.setText("Base on balls");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if (teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -22192,6 +22333,7 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 41:
                 situationOutcome.setText("Triple play; PO-SS PO-SS A-SS PO-3B");
@@ -22201,6 +22343,8 @@ public class Game {
                 situationOutcome.setText("Hit by pitcher; runners advance 1 base");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if (teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -22212,6 +22356,7 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
         }
         outcomeDescription = situationOutcome.getText();
@@ -22225,6 +22370,7 @@ public class Game {
                 runnerOffFirst();
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 out += 2;
                 outsNum.setText(Integer.toString(out));
                 if(out >= 3) {
@@ -22259,6 +22405,8 @@ public class Game {
                 situationOutcome.setText("Base on balls");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if(teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -22270,10 +22418,12 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 15:
                 situationOutcome.setText("SINGLE to left; runners advance 1 base; then another on error; E-LF");
                 setRunnerFirstToThird();
+                runnerToThird();
                 runnerOffSecond();
                 if (teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
@@ -22286,11 +22436,13 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 16:
                 situationOutcome.setText("1st on error; runners advance 2 bases; batter out trying for 2nd;" +
                         " E-CF A-CF PO-SS");
                 setRunnerFirstToThird();
+                runnerToThird();
                 runnerOffFirst();
                 runnerOffSecond();
                 out++;
@@ -22317,6 +22469,7 @@ public class Game {
                 if(out == 2) {
                     runnerOffSecond();
                     setRunnerFirstToThird();
+                    runnerToThird();
                     if (teamAtBat == AWAY_IND) {
                         setFirstBaseAway();
                         awayScore += 2;
@@ -22331,6 +22484,8 @@ public class Game {
                 } else {
                     setRunnerSecondToThird();
                     setRunnerFirstToSecond();
+                    runnerToThird();
+                    runnerToSecond();
                     if (teamAtBat == AWAY_IND) {
                         setFirstBaseAway();
                         awayScore++;
@@ -22343,11 +22498,13 @@ public class Game {
                         homeNextBatter();
                     }
                 }
+                runnerToFirst();
                 break;
             case 18:
                 situationOutcome.setText("1st on error; runners advance 2 bases; E-SS");
                 runnerOffSecond();
                 setRunnerFirstToThird();
+                runnerToThird();
                 if (teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore += 2;
@@ -22359,10 +22516,12 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 19:
                 situationOutcome.setText("SINGLE to left; runners advance 2 bases (S on 2nd out at home; A-LF PO-C)");
                 setRunnerFirstToThird();
+                runnerToThird();
                 runnerOffSecond();
                 if(secondBaseRunnerSpeed.equalsIgnoreCase("S")) {
                     out++;
@@ -22384,6 +22543,7 @@ public class Game {
                             setFirstBaseHome();
                             homeNextBatter();
                         }
+                        runnerToFirst();
                     }
                 } else {
                     if (teamAtBat == AWAY_IND) {
@@ -22397,12 +22557,15 @@ public class Game {
                         updateHomeScore();
                         homeNextBatter();
                     }
+                    runnerToFirst();
                 }
                 break;
             case 20:
                 situationOutcome.setText("Hit by pitcher; runners advance 1 base");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if (teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -22414,11 +22577,14 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 21:
                 situationOutcome.setText("1st on error; runners advance 1 base; E-1B");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if (teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -22430,6 +22596,7 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 22:
                 situationOutcome.setText("Catcher picks runner off 1st; A-C PO-1B");
@@ -22444,6 +22611,8 @@ public class Game {
                 situationOutcome.setText("Hit by pitcher; runners advance 1 base");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if (teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -22455,12 +22624,15 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 24:
                 situationOutcome.setText("Double play; runner out at home; batter out at 1st; A-SS PO-C A-C PO-1B");
                 runnerOffFirst();
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 out += 2;
                 outsNum.setText(Integer.toString(out));
                 if(out >= 3) {
@@ -22478,6 +22650,8 @@ public class Game {
                 runnerOffFirst();
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 out += 2;
                 outsNum.setText(Integer.toString(out));
                 if(out >= 3) {
@@ -22493,6 +22667,7 @@ public class Game {
             case 26:
                 situationOutcome.setText("Batter safe at 1st; FC; runner out at 2nd; others advance 1 base; A-2B PO-SS");
                 setRunnerSecondToThird();
+                runnerToThird();
                 runnerOffSecond();
                 out++;
                 outsNum.setText(Integer.toString(out));
@@ -22510,6 +22685,7 @@ public class Game {
                         updateHomeScore();
                         homeNextBatter();
                     }
+                    runnerToFirst();
                 }
                 break;
             case 27:
@@ -22517,6 +22693,8 @@ public class Game {
                         "A-3B PO-C");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -22529,12 +22707,15 @@ public class Game {
                         setFirstBaseHome();
                         homeNextBatter();
                     }
+                    runnerToFirst();
                 }
                 break;
             case 28:
                 situationOutcome.setText("Safe at 1st; FC; runner out at home; A-SS PO-C");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -22547,6 +22728,7 @@ public class Game {
                         setFirstBaseHome();
                         homeNextBatter();
                     }
+                    runnerToFirst();
                 }
                 break;
             case 29:
@@ -22554,6 +22736,8 @@ public class Game {
                         "A-P PO-C");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -22566,6 +22750,7 @@ public class Game {
                         setFirstBaseHome();
                         homeNextBatter();
                     }
+                    runnerToFirst();
                 }
                 break;
             case 30:
@@ -22610,6 +22795,7 @@ public class Game {
                 } else {
                     runnerOffSecond();
                     setRunnerSecondToThird();
+                    runnerToThird();
                     if (teamAtBat == AWAY_IND) {
                         awayScore++;
                         updateAwayScore();
@@ -22655,7 +22841,10 @@ public class Game {
                     if(homePitcherRating.equalsIgnoreCase("W")) {
                         setRunnerSecondToThird();
                         setRunnerFirstToSecond();
+                        runnerToThird();
+                        runnerToSecond();
                         setFirstBaseAway();
+                        runnerToFirst();
                         awayScore++;
                         updateAwayScore();
                         awayNextBatter();
@@ -22672,7 +22861,10 @@ public class Game {
                     if(awayPitcherRating.equalsIgnoreCase("W")) {
                         setRunnerSecondToThird();
                         setRunnerFirstToSecond();
+                        runnerToThird();
+                        runnerToSecond();
                         setFirstBaseHome();
+                        runnerToFirst();
                         homeScore++;
                         updateHomeScore();
                         homeNextBatter();
@@ -22692,6 +22884,8 @@ public class Game {
                 runnerOffFirst();
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if(teamAtBat == AWAY_IND) {
                     awayScore++;
                     updateAwayScore();
@@ -22710,6 +22904,8 @@ public class Game {
                     runnerOffFirst();
                     setRunnerSecondToThird();
                     setRunnerFirstToSecond();
+                    runnerToThird();
+                    runnerToSecond();
                     if (teamAtBat == AWAY_IND) {
                         awayScore++;
                         updateAwayScore();
@@ -22726,6 +22922,8 @@ public class Game {
                         " advance 1 base; If 2 outs, SINGLE; runners advance 1 base");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if(out == 2) {
                     if (teamAtBat == AWAY_IND) {
                         setFirstBaseAway();
@@ -22738,6 +22936,7 @@ public class Game {
                         updateHomeScore();
                         homeNextBatter();
                     }
+                    runnerToFirst();
                 } else {
                     runnerOffFirst();
                     out++;
@@ -22762,6 +22961,8 @@ public class Game {
                 runnerOffFirst();
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -22777,6 +22978,8 @@ public class Game {
                 situationOutcome.setText("Base on balls");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if (teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -22788,6 +22991,7 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 41:
                 situationOutcome.setText("Triple play; PO-SS PO-SS A-SS PO-3B");
@@ -22797,6 +23001,8 @@ public class Game {
                 situationOutcome.setText("Hit by pitcher; runners advance 1 base");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if (teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -22808,6 +23014,7 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
         }
         outcomeDescription = situationOutcome.getText();
@@ -22821,6 +23028,7 @@ public class Game {
                 runnerOffFirst();
                 runnerOffSecond();
                 setRunnerSecondToThird();
+                runnerToThird();
                 out += 2;
                 outsNum.setText(Integer.toString(out));
                 if(out >= 3) {
@@ -22855,6 +23063,8 @@ public class Game {
                 situationOutcome.setText("Base on balls");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if(teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -22866,6 +23076,7 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 15:
                 situationOutcome.setText("SINGLE to left; runners advance 2 bases (F on 1st scores)");
@@ -22885,6 +23096,7 @@ public class Game {
                     }
                 } else {
                     setRunnerFirstToThird();
+                    runnerToThird();
                     runnerOffSecond();
                     if (teamAtBat == AWAY_IND) {
                         setFirstBaseAway();
@@ -22898,10 +23110,12 @@ public class Game {
                         homeNextBatter();
                     }
                 }
+                runnerToFirst();
                 break;
             case 16:
                 situationOutcome.setText("SINGLE to right center field; runners advance 2 bases");
                 setRunnerFirstToThird();
+                runnerToThird();
                 runnerOffSecond();
                 if (teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
@@ -22914,12 +23128,14 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 17:
                 situationOutcome.setText("SINGLE to right; runners advance 1 base; If 2 outs, runners advance 2 bases");
                 if(out == 2) {
                     runnerOffSecond();
                     setRunnerFirstToThird();
+                    runnerToThird();
                     if (teamAtBat == AWAY_IND) {
                         setFirstBaseAway();
                         awayScore += 2;
@@ -22934,6 +23150,8 @@ public class Game {
                 } else {
                     setRunnerSecondToThird();
                     setRunnerFirstToSecond();
+                    runnerToThird();
+                    runnerToSecond();
                     if (teamAtBat == AWAY_IND) {
                         setFirstBaseAway();
                         awayScore++;
@@ -22946,11 +23164,13 @@ public class Game {
                         homeNextBatter();
                     }
                 }
+                runnerToFirst();
                 break;
             case 18:
                 situationOutcome.setText("1st on error; runners advance 2 bases; E-SS");
                 runnerOffSecond();
                 setRunnerFirstToThird();
+                runnerToThird();
                 if (teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore += 2;
@@ -22962,6 +23182,7 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 19:
                 situationOutcome.setText("1st & 2nd on error; runners advance 2 bases; E-3B");
@@ -22985,6 +23206,8 @@ public class Game {
                 situationOutcome.setText("Hit by pitcher; runners advance 1 base");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if (teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -22996,11 +23219,14 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 21:
                 situationOutcome.setText("1st on error; runners advance 1 base; E-1B");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if (teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -23012,6 +23238,7 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 22:
                 situationOutcome.setText("Catcher picks runner off 1st; A-C PO-1B");
@@ -23026,6 +23253,8 @@ public class Game {
                 situationOutcome.setText("Hit by pitcher; runners advance 1 base");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if (teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -23037,11 +23266,14 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 24:
                 situationOutcome.setText("Runner out at home; batter safe at 1st; A-SS PO-C");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -23054,6 +23286,7 @@ public class Game {
                         setFirstBaseHome();
                         homeNextBatter();
                     }
+                    runnerToFirst();
                 }
                 break;
             case 25:
@@ -23061,6 +23294,8 @@ public class Game {
                 runnerOffFirst();
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 out += 2;
                 outsNum.setText(Integer.toString(out));
                 if(out >= 3) {
@@ -23076,6 +23311,7 @@ public class Game {
             case 26:
                 situationOutcome.setText("Batter safe at 1st; FC; runner out at 2nd; others advance 1 base; A-2B PO-SS");
                 setRunnerSecondToThird();
+                runnerToThird();
                 runnerOffSecond();
                 out++;
                 outsNum.setText(Integer.toString(out));
@@ -23093,6 +23329,7 @@ public class Game {
                         updateHomeScore();
                         homeNextBatter();
                     }
+                    runnerToFirst();
                 }
                 break;
             case 27:
@@ -23100,6 +23337,8 @@ public class Game {
                         "A-3B PO-C");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -23112,11 +23351,13 @@ public class Game {
                         setFirstBaseHome();
                         homeNextBatter();
                     }
+                    runnerToFirst();
                 }
                 break;
             case 28:
                 situationOutcome.setText("Batter safe at 1st; FC; runner out at 2nd; others advance 1 base; A-SS PO-2B");
                 setRunnerSecondToThird();
+                runnerToThird();
                 runnerOffSecond();
                 out++;
                 outsNum.setText(Integer.toString(out));
@@ -23134,6 +23375,7 @@ public class Game {
                         updateHomeScore();
                         homeNextBatter();
                     }
+                    runnerToFirst();
                 }
                 break;
             case 29:
@@ -23141,6 +23383,8 @@ public class Game {
                         "A-P PO-C");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -23153,6 +23397,7 @@ public class Game {
                         setFirstBaseHome();
                         homeNextBatter();
                     }
+                    runnerToFirst();
                 }
                 break;
             case 30:
@@ -23197,6 +23442,7 @@ public class Game {
                 } else {
                     runnerOffSecond();
                     setRunnerSecondToThird();
+                    runnerToThird();
                     if (teamAtBat == AWAY_IND) {
                         awayScore++;
                         updateAwayScore();
@@ -23242,7 +23488,10 @@ public class Game {
                     if(homePitcherRating.equalsIgnoreCase("W")) {
                         setRunnerSecondToThird();
                         setRunnerFirstToSecond();
+                        runnerToThird();
+                        runnerToSecond();
                         setFirstBaseAway();
+                        runnerToFirst();
                         awayScore++;
                         updateAwayScore();
                         awayNextBatter();
@@ -23259,7 +23508,10 @@ public class Game {
                     if(awayPitcherRating.equalsIgnoreCase("W")) {
                         setRunnerSecondToThird();
                         setRunnerFirstToSecond();
+                        runnerToThird();
+                        runnerToSecond();
                         setFirstBaseHome();
+                        runnerToFirst();
                         homeScore++;
                         updateHomeScore();
                         homeNextBatter();
@@ -23279,6 +23531,8 @@ public class Game {
                 runnerOffFirst();
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if(teamAtBat == AWAY_IND) {
                     awayScore++;
                     updateAwayScore();
@@ -23297,6 +23551,8 @@ public class Game {
                     runnerOffFirst();
                     setRunnerSecondToThird();
                     setRunnerFirstToSecond();
+                    runnerToThird();
+                    runnerToSecond();
                     if (teamAtBat == AWAY_IND) {
                         awayScore++;
                         updateAwayScore();
@@ -23313,6 +23569,8 @@ public class Game {
                         " advance 1 base; If 2 outs, SINGLE; runners advance 1 base");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if(out == 2) {
                     if (teamAtBat == AWAY_IND) {
                         setFirstBaseAway();
@@ -23325,6 +23583,7 @@ public class Game {
                         updateHomeScore();
                         homeNextBatter();
                     }
+                    runnerToFirst();
                 } else {
                     runnerOffFirst();
                     out++;
@@ -23349,6 +23608,8 @@ public class Game {
                 runnerOffFirst();
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 out++;
                 outsNum.setText(Integer.toString(out));
                 if(out == 3) {
@@ -23364,6 +23625,8 @@ public class Game {
                 situationOutcome.setText("Base on balls");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if (teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -23375,6 +23638,7 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
             case 41:
                 situationOutcome.setText("Triple play; PO-SS PO-SS A-SS PO-3B");
@@ -23384,6 +23648,8 @@ public class Game {
                 situationOutcome.setText("Hit by pitcher; runners advance 1 base");
                 setRunnerSecondToThird();
                 setRunnerFirstToSecond();
+                runnerToThird();
+                runnerToSecond();
                 if (teamAtBat == AWAY_IND) {
                     setFirstBaseAway();
                     awayScore++;
@@ -23395,6 +23661,7 @@ public class Game {
                     updateHomeScore();
                     homeNextBatter();
                 }
+                runnerToFirst();
                 break;
         }
         outcomeDescription = situationOutcome.getText();

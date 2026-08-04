@@ -1,0 +1,21 @@
+ST. LOUIS CARDINALS OUTCOMES: 
+	Top of Inning 1 - Brandon Moss: Strikeout; PO-C | Dexter Fowler: Strikeout; PO-C | Marcell Ozuna: Fly out; PO-RF | 
+	Top of Inning 2 - Kolten Wong: Fly out; PO-CF | Jedd Gyorko: Foul out; PO-C | Yadier Molina: Fly out; PO-RF | 
+	Top of Inning 3 - Greg Garcia: Out at 1st; A-3B PO-1B | Matt Carpenter: Fly out; PO-LF | Adam Wainwright: Out at 1st; A-SS PO-1B | 
+	Top of Inning 4 - Brandon Moss: Strikeout; PO-C | Dexter Fowler: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Marcell Ozuna: Out at 1st; runner to 2nd; A-1B PO-P | Kolten Wong: TRIPLE to deep center | Jedd Gyorko: SINGLE to 2nd; Grade C Pitcher-runner holds (F scores); Grade D Pitcher-runner scores | Yadier Molina: Out at 1st; runner to 2nd; other holds; A-P PO-1B | 
+	Top of Inning 5 - Greg Garcia: Strikeout; PO-C | Matt Carpenter: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Adam Wainwright: Strikeout; PO-C | Adam Wainwright: Runner caught off 1st; A-P PO-1B | 
+	Top of Inning 6 - Brandon Moss: Strikeout; PO-C | Dexter Fowler: Strikeout; PO-C | Marcell Ozuna: Strikeout; PO-C | 
+	Top of Inning 7 - Kolten Wong: Fly out; PO-LF | Jedd Gyorko: Foul out; PO-C | Yadier Molina: Pop fly out PO-3B | 
+	Top of Inning 8 - Greg Garcia: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Matt Carpenter: Out at 1st; A-SS PO-1B | Adam Wainwright: DOUBLE to right center | Brandon Moss: Hit by pitcher; batter takes 1st | Dexter Fowler: Strikeout; PO-C | 
+	Top of Inning 9 - Marcell Ozuna: Pop fly out PO-3B | Kolten Wong: Fly out; PO-LF | Jedd Gyorko: Strikeout; PO-C | 
+MILWAUKEE BREWERS OUTCOMES: 
+	Bottom of Inning 1 - Ryan Braun: Out at 1st; A-3B PO-1B (X-SO; PO-C) | Christian Yelich: DOUBLE to right center | Lorenzo Cain: SINGLE to center; runner out at home; batter to 2nd on throw; A-CF PO-C | Mike Moustakas: SINGLE over 2nd; runner scores (S out at home; A-CF PO-C; batter to 2nd) | Orlando Arcia: Double play; A-3B PO-2B A-2B PO-1B (X-SO; PO-C) | 
+	Bottom of Inning 2 - Jesus Aguilar: HOMERUN over right field fence | Jacob Nottingham: Strikeout; PO-C | Daniel Jennings: Pop fly out PO-3B | Jonathan Schoop: Foul out; PO-C | 
+	Bottom of Inning 3 - Ryan Braun: Out at 1st; A-SS PO-1B | Christian Yelich: SINGLE to left center | Lorenzo Cain: Double play; A-3B PO-2B A-2B PO-1B (X-SO; PO-C) | 
+	Bottom of Inning 4 - Mike Moustakas: Out at 1st; A-SS PO-1B | Orlando Arcia: SINGLE to left; batter steals 2nd on first pitch to next batter; one strike on batter | Orlando Arcia: Runner steals 3rd (S holds 2nd) | Jesus Aguilar: Strikeout; PO-C | Jacob Nottingham: HOMERUN to left field | Daniel Jennings: Pop fly out; PO-SS (Y-SO; PO-C) | 
+	Bottom of Inning 5 - Jonathan Schoop: Fly out; PO-CF | Ryan Braun: SINGLE to left center | Christian Yelich: Pop fly out; PO-SS (Y-SO; PO-C) | Lorenzo Cain: SINGLE; runner to 2nd (F to 3rd; E-CF); If 2 outs, runner to 3rd | Mike Moustakas: Double play; A-1B PO-SS A-SS PO-1B; runner on 3rd scores, if this does not make third out | 
+	Bottom of Inning 6 - Orlando Arcia: Base on balls; batter takes 1st (ZZ Pitcher : 2 balls, 0 strikes) | Jesus Aguilar: Double play; A-3B PO-2B A-2B PO-1B (X-SO; PO-C) | Jacob Nottingham: Strikeout; PO-C | 
+	Bottom of Inning 7 - Daniel Jennings: Fly out; PO-LF | Jonathan Schoop: SINGLE to right | Ryan Braun: Out at 1st; runner to 2nd; A-3B PO-1B | Christian Yelich: Strikeout; PO-C | 
+	Bottom of Inning 8 - Lorenzo Cain: SINGLE to right | Lorenzo Cain: Runner out stealing; A-C PO-2B | Mike Moustakas: Out at 1st; A-3B PO-1B | Orlando Arcia: Strikeout; PO-C | 
+FINAL SCORE: 
+	Milwaukee Brewers: 4 St. Louis Cardinals: 1
